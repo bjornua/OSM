@@ -24,11 +24,11 @@ int main(int argc, const char *argv[])
     printf("%d\n", size(p));
 
     printf("Testing to_array:\n");
-
     int *t;
-    to_array(p);
-
-    printf("%d %d %d %d\n", p[0], p[1], p[2], p[3]);
+    t  = to_array(p);
+    
+    
+    printf("%d %d %d %d\n", t[0], t[1], t[2], t[3]);
 
     return 0;
 }

@@ -38,20 +38,20 @@ int size(tnode_t *tree){
     return size(tree->lchild) + 1 + size(tree->rchild);
 }
 
-void array_insert(tnode_t *tree, int *p){
+void array_insert(tnode_t *tree, int **p){
     if (tree == NULL)
         return;
-    int s;
-    s = size(tree) * sizeof(int);
     array_insert(tree->lchild, p);
-    p[s] = tree->data;
-    array_insert(tree->rchild, p[s+1]);
+    **p = tree->data;
+    *p = *p + 1;
+    array_insert(tree->rchild, p);
 }
 
 int *to_array(tnode_t *tree){
-    int *p;
+    int *p, *q;
     p = malloc(size(tree) * sizeof(int));
-    array_insert(tree, p);
+    q = p;
+    array_insert(tree, &q);
     return p;
 }
 
