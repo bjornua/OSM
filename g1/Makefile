@@ -1,4 +1,4 @@
-CC=gcc
+CC=clang
 CFLAGS=-g -pedantic -std=c99 -Wall -Wextra
 
 all: test
