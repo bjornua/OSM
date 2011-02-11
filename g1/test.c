@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "bintree.c"
 
-int main(int argc, const char *argv[])
+int main()
 {
     struct tnode_t *p = NULL;
     printf("Testing Insert:\n");
