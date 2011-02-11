@@ -55,3 +55,25 @@ int *to_array(tnode_t *tree){
     return p;
 }
 
+
+void insert2(tnode_t2** tree, void* a, int (*comp)(void*, void*)){
+    if (tree == NULL){
+        fprintf(stderr, "Memory not allocated");
+        exit(EXIT_FAILURE);
+    }
+    if (*tree == NULL){
+        struct tnode_t2 *p;
+        p = malloc(sizeof(tnode_t2));
+        if (p == NULL){
+            fprintf(stderr, "Out of memory");
+            exit(EXIT_FAILURE);
+        }
+        struct tnode_t2 t = {a, NULL, NULL};
+        *p = t;
+        *tree = p;
+    } else if (comp(a, (*tree)->data) == -1) {
+        insert2(&(*tree)->lchild, a, comp);
+    } else {
+        insert2(&(*tree)->rchild, a, comp);
+    }
+}

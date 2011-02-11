@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include "bintree.c"
 
+int comp(void* a, void* b){
+    if(*(int*)a < *(int*)b){
+        return -1;
+    }
+    return 0;
+}
+
 int main()
 {
     struct tnode_t *p = NULL;
@@ -29,6 +36,22 @@ int main()
     
     
     printf("%d %d %d %d\n", t[0], t[1], t[2], t[3]);
+    
+    int int9 = 9, int6 = 6, int11 = 11, int10 = 10;
+
+    
+    
+    struct tnode_t2 *p2 = NULL;
+    printf("Testing Insert:\n");
+    insert2(&p2, &int9, &comp);
+    printf("%d\n", *(int*)(p2->data));
+    insert2(&p2, &int6, &comp);
+    printf("%d\n", *(int*)(p2->lchild->data));
+    insert2(&p2, &int11, &comp);
+    printf("%d\n", *(int*)(p2->rchild->data));
+    insert2(&p2, &int10, &comp);
+    printf("%d\n", *(int*)(p2->rchild->lchild->data));
+
 
     return 0;
 }
