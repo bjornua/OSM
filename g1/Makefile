@@ -9,10 +9,16 @@ bintree: bintree.o
 bintree.o: bintree.c bintree.h
 	$(CC) $(CFLAGS) -c bintree.c
 
+dlist: dlist.o
+	$(CC) $(CFLAGS) dlist.o -o dlist
+
+dlist.o: dlist.c dlist.h
+	$(CC) $(CFLAGS) -c dlist.c
+
 test: test.o
 	$(CC) $(CFLAGS) test.o -o test
 
-test.o: bintree.o
+test.o: bintree.o dlist.o
 	$(CC) $(CFLAGS) -c test.c
 
 clean:
