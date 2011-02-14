@@ -33,7 +33,7 @@ void insert(tnode_t **tree, int a){
 void print_inorder(tnode_t *tree){
     if(tree->lchild != NULL)            /* Print the left subtree */
         print_inorder(tree->lchild);
-    printf("%d ", tree->data);           /* Print the actual data */
+    printf("%d ", tree->data);          /* Print the actual data */
     if(tree->rchild != NULL)
         print_inorder(tree->rchild);    /* Print the right subtree */
 }

@@ -39,12 +39,20 @@ int main()
     int *t;
     t  = to_array(p);
 
-    printf("%d %d %d %d\n", t[0], t[1], t[2], t[3]);
+    printf("%d, %d, %d, %d\n", t[0], t[1], t[2], t[3]);
     
+    /* Testing dlist */
+    printf("Testing dlist\n");
+    struct dlist_t *lst;
+    lst = tree2dlist(p);
+    printf("%d, %d, %d, %d\n",
+            lst->data,
+            lst->next->data,
+            lst->next->next->data,
+            lst->next->next->next->data);
+
     int int9 = 9, int6 = 6, int11 = 11, int10 = 10;
 
-    
-    
     struct tnode_t2 *p2 = NULL;
     printf("Testing Insert:\n");
     insert2(&p2, &int9, &comp);
@@ -55,12 +63,6 @@ int main()
     printf("%d\n", *(int*)(p2->rchild->data));
     insert2(&p2, &int10, &comp);
     printf("%d\n", *(int*)(p2->rchild->lchild->data));
-
-
-    /* Testing dlist */
-    printf("Testing dlist\n");
-    struct dlist_t *lst;
-    lst = tree2dlist(p);
 
     return 0;
 }

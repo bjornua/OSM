@@ -19,4 +19,45 @@
 
 \maketitle
 
+\section*{Opgave 1}
+
+Funktionen {\tt insert()} går rekursivt gennem træet, den vælger det venstre
+deltræ hvis {\tt data} er større en den værdi der skal indsættes og til
+højre hvis den er mindre. Hvis den finder et tomt træ bruger vi {\tt malloc()}
+til at allokere lager til et nyt element og ændrer pegeren til at pege på det
+nye element.
+
+{\tt print\_inorder()} kalder først {\tt print\_inorder()} på det venstre deltræ,
+derefter printer den {\tt data}, hvorefter den kalder {\tt print\_inorder()} på
+det højre  deltræ.
+
+{\tt size()} fungere meget ligesom {\tt print\_inorder}, men den summer
+resultaterne fra det rekursive kald.t
+
+I {\tt to\_array} allokere vi først plads i lageret til at indeholde antallet
+af elementer i træet gange størrelsen af en {\tt int}. Derefter bruger
+funktionen {\tt array\_insert} til rekursivt at indsætte elementer i arrayet.
+{\tt array\_insert()} tager en peger til en peger til det første element i
+arrayet. Denne peger bliver inkrementeret hvergang der bliver tilføjet et
+element til arrayet, på denne måde bliver elementerne indsat i arrayet i
+rækkefølge.
+
+\section*{Opgave 2}
+
+For at lave træet om til en list definerer vi først funktionen {\tt cons} det
+hægter to lister sammen. I {\tt tree2dlist} allokere vi først lager til en ny
+node.
+
+Hvis der finder et venstre undertræ kalder laver dette om til en list og
+hægter det på {\tt p}, hvis det ikke findes sættter vi {\tt ls} til {\tt p},
+da funktionen skal returnere det første element i listen. Hvis der findes et
+højre undertræ, laver vi også dette om til en liste og hægter denne på {\tt
+p}.
+
+\section*{Opgave 3}
+
+{\tt insert2} er implementeret på samme måde som {\tt insert}, men vi bruger
+funktionen {\tt comp} til at sammenligne istedet for {\tt >}.
+
+
 \end{document}

@@ -3,23 +3,31 @@
 
 #include "dlist.h"
 
+void cons(dlist_t *a, dlist_t *b){
+    a->next->prev = b;
+    b->prev->next = a;
+    a->next = b;
+    b->prev = a;
+}
+
 dlist_t *tree2dlist(tnode_t *tree){
-    printf("tree2dlist %d \n", tree->data);
-
-    struct dlist_t *ls, *rs;
-    ls = tree2dlist(tree->lchild);
-    rs = tree2dlist(tree->rchild);
-
-    rs->prev = ls;
-    ls->prev->next = rs;
 
     struct dlist_t *p;
     p = malloc(sizeof(dlist_t));
-    struct dlist_t t = {tree->data, ls, rs};
+    struct dlist_t t = {tree->data, p, p};
     *p = t;
-    rs->prev = p;
-    ls->next = p;
+
+    struct dlist_t *ls;
+    if (tree->lchild){
+        ls = tree2dlist(tree->lchild);
+        cons(ls, p);
+    } else {
+        ls = p;
+    }
+
+    if (tree->rchild){
+        cons(p, tree2dlist(tree->rchild));
+    }
     
     return ls;
-
 }
