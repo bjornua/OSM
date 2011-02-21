@@ -1,0 +1,1002 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADDR_IS_ON_EVEN_PAGE	vm/vm.c	54;"	d	file:
+ADDR_IS_ON_ODD_PAGE	vm/vm.c	53;"	d	file:
+ADDR_KERNEL_TO_PHYS	vm/pagepool.h	43;"	d
+ADDR_PHYS_TO_KERNEL	vm/pagepool.h	42;"	d
+AS	Makefile	/^AS      := mips-elf-as$/;"	m
+AS	tests/Makefile	/^AS      := mips-elf-as$/;"	m
+ASFLAGS	Makefile	/^ASFLAGS := -gstabs+ -I. -Wa,-mips32 $(CHANGEDFLAGS)$/;"	m
+ASFLAGS	tests/Makefile	/^ASFLAGS := -I.. -Wa,-mips32$/;"	m
+ASID	vm/pagetable.h	/^    uint32_t ASID;$/;"	m	struct:pagetable_struct_t
+ASID	vm/tlb.h	/^    unsigned int ASID:8     __attribute__ ((packed));$/;"	m	struct:__anon34
+AT	lib/registers.h	40;"	d
+BOOT_ARGUMENT_AREA	drivers/yams.h	52;"	d
+BUENOS_CONFIG_H	kernel/config.h	38;"	d
+BUENOS_FS_FILESYSTEMS	fs/filesystems.h	38;"	d
+BUENOS_FS_VFS_H	fs/vfs.h	38;"	d
+BUENOS_KERNEL_EXCEPTION_H	kernel/exception.h	38;"	d
+BUENOS_KERNEL_HALT_H	kernel/halt.h	38;"	d
+BUENOS_KERNEL_IDLE_H	kernel/idle.h	38;"	d
+BUENOS_KERNEL_INTERRUPT_H	kernel/interrupt.h	38;"	d
+BUENOS_KERNEL_SCHEDULER_H	kernel/scheduler.h	38;"	d
+BUENOS_KERNEL_SEMAPHORE_H	kernel/semaphore.h	38;"	d
+BUENOS_KERNEL_SLEEPQ_H	kernel/sleepq.h	38;"	d
+BUENOS_KERNEL_SPINLOCK_H	kernel/spinlock.h	38;"	d
+BUENOS_KERNEL_SYNCH_H	kernel/synch.h	38;"	d
+BUENOS_KERNEL_THREAD_H	kernel/thread.h	38;"	d
+BUENOS_LIB_BITMAP_H	lib/bitmap.h	37;"	d
+BUENOS_LIB_DEBUG_H	lib/debug.h	37;"	d
+BUENOS_LIB_LIBC_H	lib/libc.h	37;"	d
+BUENOS_LIB_LIBC_H	util/tfstool.c	47;"	d	file:
+BUENOS_PROC_ELF	proc/elf.h	38;"	d
+BUENOS_PROC_PROCESS	proc/process.h	38;"	d
+BUENOS_PROC_SYSCALL	proc/syscall.h	38;"	d
+BUENOS_USERLAND_LIB_H	tests/lib.h	38;"	d
+BUENOS_VM_PAGEPOOL_H	vm/pagepool.h	38;"	d
+BUENOS_VM_PAGETABLE_H	vm/pagetable.h	38;"	d
+BUENOS_VM_TLB_H	vm/tlb.h	38;"	d
+BUENOS_VM_VM_H	vm/vm.h	38;"	d
+BadVAd	lib/registers.h	80;"	d
+Booting and Initializing Hardware	doc/roadmap/roadmap.tex	/^\\end{exercises}$/;"	c
+C0	vm/tlb.h	/^    unsigned int C0:3       __attribute__ ((packed));$/;"	m	struct:__anon34
+C1	vm/tlb.h	/^    unsigned int C1:3       __attribute__ ((packed));$/;"	m	struct:__anon34
+CC	Makefile	/^CC      := mips-elf-gcc$/;"	m
+CC	tests/Makefile	/^CC      := mips-elf-gcc$/;"	m
+CONFIG_BOOTARGS_MAX	kernel/config.h	64;"	d
+CONFIG_MAX_CPUS	kernel/config.h	52;"	d
+CONFIG_MAX_DEVICES	kernel/config.h	74;"	d
+CONFIG_MAX_FILESYSTEMS	kernel/config.h	80;"	d
+CONFIG_MAX_GNDS	kernel/config.h	107;"	d
+CONFIG_MAX_OPEN_FILES	kernel/config.h	86;"	d
+CONFIG_MAX_OPEN_SOCKETS	kernel/config.h	91;"	d
+CONFIG_MAX_SEMAPHORES	kernel/config.h	69;"	d
+CONFIG_MAX_THREADS	kernel/config.h	43;"	d
+CONFIG_POP_QUEUE_MIN_AGE	kernel/config.h	102;"	d
+CONFIG_POP_QUEUE_SIZE	kernel/config.h	96;"	d
+CONFIG_SCHEDULER_TIMESLICE	kernel/config.h	58;"	d
+CONFIG_THREAD_STACKSIZE	kernel/config.h	46;"	d
+CONFIG_USERLAND_STACK_SIZE	kernel/config.h	112;"	d
+CPU_COMMAND_CLEAR_IRQ	drivers/metadev.h	49;"	d
+CPU_COMMAND_RAISE_IRQ	drivers/metadev.h	48;"	d
+CPU_STATUS_IRQ	drivers/metadev.h	51;"	d
+Cause	lib/registers.h	85;"	d
+Compar	lib/registers.h	83;"	d
+Conf	lib/registers.h	88;"	d
+Context Switch	doc/roadmap/roadmap.tex	/^\\end{filelist}$/;"	s
+Context Switching Code	doc/roadmap/roadmap.tex	/^\\texttt{kernel\/interrupt.c}.$/;"	b
+Contxt	lib/registers.h	77;"	d
+Count	lib/registers.h	81;"	d
+D0	vm/tlb.h	/^    unsigned int D0:1       __attribute__ ((packed));$/;"	m	struct:__anon34
+D1	vm/tlb.h	/^    unsigned int D1:1       __attribute__ ((packed));$/;"	m	struct:__anon34
+DEBUG	lib/debug.c	/^void DEBUG(char *debuglevelname, char *format, ...)$/;"	f
+DEFAULT_SHUTDOWN_MAGIC	drivers/metadev.h	45;"	d
+DEPS	Makefile	/^DEPS := $(patsubst %.c,%.d,$(filter %.c,$(SRC))) \\$/;"	m
+DEVICE_H	drivers/device.h	38;"	d
+DISK_COMMAND_BLOCKS	drivers/disk.h	52;"	d
+DISK_COMMAND_BLOCKSIZE	drivers/disk.h	53;"	d
+DISK_COMMAND_BLOCKSPERCYL	drivers/disk.h	54;"	d
+DISK_COMMAND_READ	drivers/disk.h	48;"	d
+DISK_COMMAND_RIRQ	drivers/disk.h	50;"	d
+DISK_COMMAND_ROTTIME	drivers/disk.h	55;"	d
+DISK_COMMAND_SEEKTIME	drivers/disk.h	56;"	d
+DISK_COMMAND_WIRQ	drivers/disk.h	51;"	d
+DISK_COMMAND_WRITE	drivers/disk.h	49;"	d
+DISK_STATUS_EBUSY	drivers/disk.h	67;"	d
+DISK_STATUS_ERROR	drivers/disk.h	68;"	d
+DISK_STATUS_ERRORS	drivers/disk.h	70;"	d
+DISK_STATUS_IADDR	drivers/disk.h	65;"	d
+DISK_STATUS_ICOMM	drivers/disk.h	66;"	d
+DISK_STATUS_ISECT	drivers/disk.h	64;"	d
+DISK_STATUS_RBUSY	drivers/disk.h	58;"	d
+DISK_STATUS_RIRQ	drivers/disk.h	60;"	d
+DISK_STATUS_WBUSY	drivers/disk.h	59;"	d
+DISK_STATUS_WIRQ	drivers/disk.h	61;"	d
+DRIVERS_BOOTARGS_H	drivers/bootargs.h	38;"	d
+DRIVERS_DISKSCHED_H	drivers/disksched.h	38;"	d
+DRIVERS_DISK_H	drivers/disk.h	38;"	d
+DRIVERS_DRIVERS_H	drivers/drivers.h	38;"	d
+DRIVERS_GBD_H	drivers/gbd.h	38;"	d
+DRIVERS_GCD_H	drivers/gcd.h	38;"	d
+DRIVERS_GND_H	drivers/gnd.h	38;"	d
+DRIVERS_METADEV_H	drivers/metadev.h	38;"	d
+DRIVERS_TIMER_H	drivers/timer.h	38;"	d
+DRIVERS_YAMS_H	drivers/yams.h	38;"	d
+Device Abstraction Layers	doc/roadmap/roadmap.tex	/^\\end{filelist}$/;"	s
+Device Driver Implementor s initialization function in texttt drivers _available	doc/roadmap/roadmap.tex	/^initialization is done in \\texttt{device\\_init()}.$/;"	b
+Device Driver Interface	doc/roadmap/roadmap.tex	/^\\end{enumerate}$/;"	b
+Device Drivers	doc/roadmap/roadmap.tex	/^\\end{exercises}$/;"	c
+Directory Structure	doc/roadmap/roadmap.tex	/^\\cite{tanenbaum} p. 20--48 or \\cite{stallings} p. 10--31, 48--51 and 54--76.$/;"	s
+Disk Scheduler	doc/roadmap/roadmap.tex	/^\\end{function}$/;"	b
+Disk driver	doc/roadmap/roadmap.tex	/^checklist in \\autoref{sec:checklist}.$/;"	b
+Drivers	doc/roadmap/roadmap.tex	/^\\end{filelist}$/;"	s
+EI_CLASS	proc/elf.h	83;"	d
+EI_DATA	proc/elf.h	84;"	d
+EI_MAGIC	proc/elf.h	92;"	d
+EI_NIDENT	proc/elf.h	99;"	d
+EI_VERSION	proc/elf.h	85;"	d
+ELFCLASS32	proc/elf.h	87;"	d
+ELFDATA2MSB	proc/elf.h	88;"	d
+ELF_MAGIC	proc/elf.h	94;"	d
+EM_MIPS	proc/elf.h	81;"	d
+EPC	lib/registers.h	86;"	d
+ET_EXEC	proc/elf.h	80;"	d
+EV_CURRENT	proc/elf.h	89;"	d
+EXCEPTION_ADDRL	kernel/exception.h	44;"	d
+EXCEPTION_ADDRS	kernel/exception.h	45;"	d
+EXCEPTION_AOFLOW	kernel/exception.h	52;"	d
+EXCEPTION_BREAK	kernel/exception.h	49;"	d
+EXCEPTION_BUSD	kernel/exception.h	47;"	d
+EXCEPTION_BUSI	kernel/exception.h	46;"	d
+EXCEPTION_COPROC	kernel/exception.h	51;"	d
+EXCEPTION_INTR	kernel/exception.h	40;"	d
+EXCEPTION_RESVI	kernel/exception.h	50;"	d
+EXCEPTION_SYSCALL	kernel/exception.h	48;"	d
+EXCEPTION_TLBL	kernel/exception.h	42;"	d
+EXCEPTION_TLBM	kernel/exception.h	41;"	d
+EXCEPTION_TLBS	kernel/exception.h	43;"	d
+EXCEPTION_TRAP	kernel/exception.h	53;"	d
+Elf32_Ehdr	proc/elf.h	/^} Elf32_Ehdr;$/;"	t	typeref:struct:__anon32
+Elf32_Phdr	proc/elf.h	/^} Elf32_Phdr;$/;"	t	typeref:struct:__anon33
+EntLo0	lib/registers.h	75;"	d
+EntLo1	lib/registers.h	76;"	d
+EntrHi	lib/registers.h	82;"	d
+ErrEPC	lib/registers.h	90;"	d
+Exception Processing in Kernel Mode	doc/roadmap/roadmap.tex	/^\\end{filelist}$/;"	s
+Exercises	doc/roadmap/roadmap.tex	/^\\newenvironment{exercises}[1][\\addcontentsline{toc}{section}{Exercises}%$/;"	s
+Expected Background Knowledge	doc/roadmap/roadmap.tex	/^compiler to compile \\buenos{}.$/;"	s
+Extra System Calls	doc/roadmap/roadmap.tex	/^\\end{function}$/;"	b
+FILEHANDLE_STDERR	proc/syscall.h	62;"	d
+FILEHANDLE_STDIN	proc/syscall.h	60;"	d
+FILEHANDLE_STDOUT	proc/syscall.h	61;"	d
+FILES	drivers/module.mk	/^FILES := polltty.c _timer.S timer.c bootargs.c device.c drivers.c tty.c \\$/;"	m
+FILES	fs/module.mk	/^FILES := vfs.c tfs.c filesystems.c$/;"	m
+FILES	init/module.mk	/^FILES := _boot.S main.c $/;"	m
+FILES	kernel/module.mk	/^FILES := cswitch.S panic.c kmalloc.c interrupt.c thread.c \\$/;"	m
+FILES	lib/module.mk	/^FILES := libc.c xprintf.c rand.S bitmap.c debug.c$/;"	m
+FILES	net/module.mk	/^FILES := network.c protocols.c socket.c pop.c$/;"	m
+FILES	proc/module.mk	/^FILES := exception.c elf.c process.c syscall.c$/;"	m
+FILES	vm/module.mk	/^FILES := vm.c pagepool.c _tlb.S tlb.c$/;"	m
+FLAG_ALT	lib/xprintf.c	143;"	d	file:
+FLAG_LEFT	lib/xprintf.c	145;"	d	file:
+FLAG_SIGN	lib/xprintf.c	147;"	d	file:
+FLAG_SMALLS	lib/xprintf.c	142;"	d	file:
+FLAG_SPACE	lib/xprintf.c	146;"	d	file:
+FLAG_TTY	lib/xprintf.c	75;"	d	file:
+FLAG_ZEROPAD	lib/xprintf.c	144;"	d	file:
+FS_TFS_H	fs/tfs.h	38;"	d
+Filesystem	doc/roadmap/roadmap.tex	/^\\end{exercises}$/;"	c
+Filesystem Conventions	doc/roadmap/roadmap.tex	/^p. 300--302, 315--322 and 379--428.$/;"	s
+Filesystem Driver Interface	doc/roadmap/roadmap.tex	/^\\end{function}$/;"	b
+Filesystem Layers	doc/roadmap/roadmap.tex	/^separated by slashes.$/;"	s
+Filesystem Operations	doc/roadmap/roadmap.tex	/^\\end{function}$/;"	b
+G0	vm/tlb.h	/^    unsigned int G0:1       __attribute__ ((packed));$/;"	m	struct:__anon34
+G1	vm/tlb.h	/^    unsigned int G1:1       __attribute__ ((packed));$/;"	m	struct:__anon34
+GBD_OPERATION_READ	drivers/gbd.h	/^    GBD_OPERATION_READ,$/;"	e	enum:__anon8
+GBD_OPERATION_WRITE	drivers/gbd.h	/^    GBD_OPERATION_WRITE$/;"	e	enum:__anon8
+GTAR	Makefile	/^GTAR    := gtar$/;"	m
+Generic Block Device	doc/roadmap/roadmap.tex	/^\\end{table}$/;"	b
+Generic Character Device	doc/roadmap/roadmap.tex	/^\\end{function}$/;"	b
+Generic Network Device	doc/roadmap/roadmap.tex	/^functions.$/;"	b
+Hardware Support for Virtual Memory	doc/roadmap/roadmap.tex	/^of physical memory. See below for description on address regions.$/;"	s
+How to Use This Document	doc/roadmap/roadmap.tex	/^Tanenbaum, but the approach is different.$/;"	s
+IDLE_THREAD_TID	kernel/thread.h	56;"	d
+INTERRUPT_CAUSE_HARDWARE_0	kernel/interrupt.h	48;"	d
+INTERRUPT_CAUSE_HARDWARE_1	kernel/interrupt.h	49;"	d
+INTERRUPT_CAUSE_HARDWARE_2	kernel/interrupt.h	50;"	d
+INTERRUPT_CAUSE_HARDWARE_3	kernel/interrupt.h	51;"	d
+INTERRUPT_CAUSE_HARDWARE_4	kernel/interrupt.h	52;"	d
+INTERRUPT_CAUSE_HARDWARE_5	kernel/interrupt.h	53;"	d
+INTERRUPT_CAUSE_SOFTWARE_0	kernel/interrupt.h	46;"	d
+INTERRUPT_CAUSE_SOFTWARE_1	kernel/interrupt.h	47;"	d
+INTERRUPT_MASK_ALL	kernel/interrupt.h	65;"	d
+INTERRUPT_MASK_HARDWARE	kernel/interrupt.h	67;"	d
+INTERRUPT_MASK_HARDWARE_0	kernel/interrupt.h	59;"	d
+INTERRUPT_MASK_HARDWARE_1	kernel/interrupt.h	60;"	d
+INTERRUPT_MASK_HARDWARE_2	kernel/interrupt.h	61;"	d
+INTERRUPT_MASK_HARDWARE_3	kernel/interrupt.h	62;"	d
+INTERRUPT_MASK_HARDWARE_4	kernel/interrupt.h	63;"	d
+INTERRUPT_MASK_HARDWARE_5	kernel/interrupt.h	64;"	d
+INTERRUPT_MASK_MASTER	kernel/interrupt.h	56;"	d
+INTERRUPT_MASK_SOFTWARE	kernel/interrupt.h	66;"	d
+INTERRUPT_MASK_SOFTWARE_0	kernel/interrupt.h	57;"	d
+INTERRUPT_MASK_SOFTWARE_1	kernel/interrupt.h	58;"	d
+INTERRUPT_VECTOR_ADDRESS1	kernel/interrupt.c	49;"	d	file:
+INTERRUPT_VECTOR_ADDRESS2	kernel/interrupt.c	50;"	d	file:
+INTERRUPT_VECTOR_ADDRESS3	kernel/interrupt.c	51;"	d	file:
+INTERRUPT_VECTOR_LENGTH	kernel/interrupt.c	52;"	d	file:
+IO_DESCRIPTOR_AREA	drivers/yams.h	46;"	d
+Idle thread	doc/roadmap/roadmap.tex	/^\\end{function}$/;"	b
+In the Beginning There was texttt _boot S	doc/roadmap/roadmap.tex	/^when userland processes can be started.$/;"	s
+Index	lib/registers.h	73;"	d
+Interrupt Handlers	doc/roadmap/roadmap.tex	/^\\cite{tanenbaum} p. 269--300 and 327--341 or \\cite{stallings} p. 474--486.$/;"	s
+Interrupt Vectors	doc/roadmap/roadmap.tex	/^detail in \\autoref{sec:inthandlers}.$/;"	b
+Interrupt driven TTY driver	doc/roadmap/roadmap.tex	/^\\end{filelist}$/;"	b
+Introduction	doc/roadmap/roadmap.tex	/^\\setlength{\\tablewidth}{\\linewidth-1cm}$/;"	c
+KERNEL_ASM_H	kernel/asm.h	37;"	d
+KERNEL_ASSERT	kernel/assert.h	43;"	d
+KERNEL_ASSERT_H	kernel/assert.h	38;"	d
+KERNEL_BOOT_ADDRESS	drivers/yams.h	43;"	d
+KERNEL_CSWITCH_H	kernel/cswitch.h	37;"	d
+KERNEL_PANIC	kernel/panic.h	41;"	d
+KERNEL_PANIC_H	kernel/panic.h	38;"	d
+KMALLOC_H	kernel/kmalloc.h	38;"	d
+Kernel Architecture	doc/roadmap/roadmap.tex	/^\\end{description}$/;"	s
+Kernel Overview	doc/roadmap/roadmap.tex	/^\\texttt{"YAMS running...Shutting down by software request"}.$/;"	c
+LD	Makefile	/^LD      := mips-elf-ld$/;"	m
+LD	tests/Makefile	/^LD      := mips-elf-ld$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS := --script=ld.script --cref -G0 -Map buenos.map$/;"	m
+LDFLAGS	tests/Makefile	/^LDFLAGS := --script=ld.userland.script --cref -s -G0$/;"	m
+LIB_REGISTERS_H	lib/registers.h	37;"	d
+LLAddr	lib/registers.h	89;"	d
+MAX	lib/libc.h	45;"	d
+MIN	lib/libc.h	44;"	d
+MIPS_REGISTER_A0	kernel/cswitch.h	45;"	d
+MIPS_REGISTER_A1	kernel/cswitch.h	46;"	d
+MIPS_REGISTER_A2	kernel/cswitch.h	47;"	d
+MIPS_REGISTER_A3	kernel/cswitch.h	48;"	d
+MIPS_REGISTER_AT	kernel/cswitch.h	42;"	d
+MIPS_REGISTER_FP	kernel/cswitch.h	69;"	d
+MIPS_REGISTER_GP	kernel/cswitch.h	67;"	d
+MIPS_REGISTER_RA	kernel/cswitch.h	70;"	d
+MIPS_REGISTER_S0	kernel/cswitch.h	57;"	d
+MIPS_REGISTER_S1	kernel/cswitch.h	58;"	d
+MIPS_REGISTER_S2	kernel/cswitch.h	59;"	d
+MIPS_REGISTER_S3	kernel/cswitch.h	60;"	d
+MIPS_REGISTER_S4	kernel/cswitch.h	61;"	d
+MIPS_REGISTER_S5	kernel/cswitch.h	62;"	d
+MIPS_REGISTER_S6	kernel/cswitch.h	63;"	d
+MIPS_REGISTER_S7	kernel/cswitch.h	64;"	d
+MIPS_REGISTER_SP	kernel/cswitch.h	68;"	d
+MIPS_REGISTER_T0	kernel/cswitch.h	49;"	d
+MIPS_REGISTER_T1	kernel/cswitch.h	50;"	d
+MIPS_REGISTER_T2	kernel/cswitch.h	51;"	d
+MIPS_REGISTER_T3	kernel/cswitch.h	52;"	d
+MIPS_REGISTER_T4	kernel/cswitch.h	53;"	d
+MIPS_REGISTER_T5	kernel/cswitch.h	54;"	d
+MIPS_REGISTER_T6	kernel/cswitch.h	55;"	d
+MIPS_REGISTER_T7	kernel/cswitch.h	56;"	d
+MIPS_REGISTER_T8	kernel/cswitch.h	65;"	d
+MIPS_REGISTER_T9	kernel/cswitch.h	66;"	d
+MIPS_REGISTER_V0	kernel/cswitch.h	43;"	d
+MIPS_REGISTER_V1	kernel/cswitch.h	44;"	d
+MODULE	drivers/module.mk	/^MODULE := drivers$/;"	m
+MODULE	fs/module.mk	/^MODULE := fs$/;"	m
+MODULE	init/module.mk	/^MODULE := init$/;"	m
+MODULE	kernel/module.mk	/^MODULE := kernel$/;"	m
+MODULE	lib/module.mk	/^MODULE := lib$/;"	m
+MODULE	net/module.mk	/^MODULE := net$/;"	m
+MODULE	proc/module.mk	/^MODULE := proc$/;"	m
+MODULE	util/module.mk	/^MODULE := util$/;"	m
+MODULE	vm/module.mk	/^MODULE := vm$/;"	m
+MODULES	Makefile	/^MODULES     := init kernel lib drivers proc vm fs net util$/;"	m
+Metadevice Drivers	doc/roadmap/roadmap.tex	/^\\end{filelist}$/;"	b
+NATIVECC	util/module.mk	/^NATIVECC      := gcc$/;"	m
+NETWORK_BROADCAST_ADDRESS	net/network.h	63;"	d
+NETWORK_LOOPBACK_ADDRESS	net/network.h	64;"	d
+NETWORK_MAX_MTU	net/network.h	65;"	d
+NET_DOESNT_EXIST	net/network.h	61;"	d
+NET_ERROR	net/network.h	60;"	d
+NET_NETWORK_H	net/network.h	38;"	d
+NET_OK	net/network.h	59;"	d
+NET_POP_H	net/pop.h	38;"	d
+NET_PROTOCOLS_H	net/protocols.h	38;"	d
+NET_SOCKET_H	net/socket.h	38;"	d
+NET_SOP_H	net/sop.h	38;"	d
+OBJECTS	tests/Makefile	/^OBJECTS  := $(patsubst %.c, %.o, $(SOURCES))$/;"	m
+OBJS	Makefile	/^OBJS :=  $(patsubst %.s,%.o,$(filter %.s,$(SRC))) \\$/;"	m
+PAGETABLE_ENTRIES	vm/pagetable.h	45;"	d
+PAGE_SIZE	drivers/yams.h	55;"	d
+PAGE_SIZE_MASK	drivers/yams.h	58;"	d
+PFN0	vm/tlb.h	/^    unsigned int PFN0:20    __attribute__ ((packed));$/;"	m	struct:__anon34
+PFN1	vm/tlb.h	/^    unsigned int PFN1:20    __attribute__ ((packed));$/;"	m	struct:__anon34
+PF_R	proc/elf.h	145;"	d
+PF_W	proc/elf.h	144;"	d
+PF_X	proc/elf.h	143;"	d
+PHASE	Makefile	/^PHASE        := 1$/;"	m
+POLLTTY_H	drivers/polltty.h	38;"	d
+POP Specific Structures and Functions	doc/roadmap/roadmap.tex	/^\\end{function}$/;"	b
+POP_ACTION_DISCARD	net/pop.c	362;"	d	file:
+POP_ACTION_NONE	net/pop.c	361;"	d	file:
+POP_ACTION_TRANSFER	net/pop.c	363;"	d	file:
+POWEROFF_SHUTDOWN_MAGIC	drivers/metadev.h	46;"	d
+PRId	lib/registers.h	87;"	d
+PROTOCOL_POP	net/protocols.h	43;"	d
+PROTOCOL_SOP	net/protocols.h	45;"	d
+PT_DYNAMIC	proc/elf.h	134;"	d
+PT_HIPROC	proc/elf.h	140;"	d
+PT_INTERP	proc/elf.h	135;"	d
+PT_LOAD	proc/elf.h	133;"	d
+PT_LOPROC	proc/elf.h	139;"	d
+PT_NOTE	proc/elf.h	136;"	d
+PT_NULL	proc/elf.h	132;"	d
+PT_PHDR	proc/elf.h	138;"	d
+PT_SHLIB	proc/elf.h	137;"	d
+PgMask	lib/registers.h	78;"	d
+Polling TTY driver	doc/roadmap/roadmap.tex	/^\\section{Drivers}$/;"	b
+Process Related	doc/roadmap/roadmap.tex	/^\\end{function}$/;"	b
+Process Startup	doc/roadmap/roadmap.tex	/^\\cite{tanenbaum} p. 71--80 and 202--207.$/;"	s
+Random	lib/registers.h	74;"	d
+Return Values	doc/roadmap/roadmap.tex	/^exercises below).$/;"	b
+SEG_RO	proc/elf.c	66;"	d	file:
+SEG_RW	proc/elf.c	67;"	d	file:
+SLEEPQ_HASH	kernel/sleepq.c	72;"	d	file:
+SLEEPQ_HASHTABLE_SIZE	kernel/sleepq.c	60;"	d	file:
+SOURCES	tests/Makefile	/^SOURCES  := halt.c$/;"	m
+SRC	Makefile	/^SRC :=$/;"	m
+SYSCALL_CLOSE	proc/syscall.h	50;"	d
+SYSCALL_CREATE	proc/syscall.h	54;"	d
+SYSCALL_DELETE	proc/syscall.h	55;"	d
+SYSCALL_EXEC	proc/syscall.h	44;"	d
+SYSCALL_EXIT	proc/syscall.h	45;"	d
+SYSCALL_FORK	proc/syscall.h	47;"	d
+SYSCALL_HALT	proc/syscall.h	43;"	d
+SYSCALL_JOIN	proc/syscall.h	46;"	d
+SYSCALL_MEMLIMIT	proc/syscall.h	48;"	d
+SYSCALL_OPEN	proc/syscall.h	49;"	d
+SYSCALL_READ	proc/syscall.h	52;"	d
+SYSCALL_SEEK	proc/syscall.h	51;"	d
+SYSCALL_WRITE	proc/syscall.h	53;"	d
+SYSLIBS	tests/Makefile	/^SYSLIBS := crt.o _syscall.o lib.o$/;"	m
+Scheduler	doc/roadmap/roadmap.tex	/^\\end{filelist}$/;"	s
+Self Manipulation Functions	doc/roadmap/roadmap.tex	/^\\end{function}$/;"	b
+Semaphore Implementation	doc/roadmap/roadmap.tex	/^freed by calling \\texttt{semaphore\\_destroy()}.$/;"	b
+Semaphores	doc/roadmap/roadmap.tex	/^\\end{filelist}$/;"	s
+Starting Processes	doc/roadmap/roadmap.tex	/^\\end{description}$/;"	s
+Status	lib/registers.h	84;"	d
+TARGET	Makefile	/^TARGET     := buenos$/;"	m
+TARGETS	tests/Makefile	/^TARGETS  := $(patsubst %.o, %, $(OBJECTS))$/;"	m
+TFSTOOL_VERSION	util/tfstool.h	42;"	d
+TFS_ALLOCATION_BLOCK	fs/tfs.h	54;"	d
+TFS_BLOCKS_MAX	fs/tfs.h	66;"	d
+TFS_BLOCK_SIZE	fs/tfs.h	47;"	d
+TFS_DIRECTORY_BLOCK	fs/tfs.h	55;"	d
+TFS_FILENAME_MAX	fs/tfs.h	59;"	d
+TFS_HEADER_BLOCK	fs/tfs.h	53;"	d
+TFS_MAGIC	fs/tfs.h	50;"	d
+TFS_MAX_FILES	fs/tfs.h	100;"	d
+TFS_MAX_FILESIZE	fs/tfs.h	70;"	d
+TFS_VOLUMENAME_MAX	fs/tfs.h	58;"	d
+THREAD_DYING	kernel/thread.h	/^    THREAD_DYING$/;"	e	enum:__anon22
+THREAD_FREE	kernel/thread.h	/^    THREAD_FREE,$/;"	e	enum:__anon22
+THREAD_NONREADY	kernel/thread.h	/^    THREAD_NONREADY,$/;"	e	enum:__anon22
+THREAD_READY	kernel/thread.h	/^    THREAD_READY,$/;"	e	enum:__anon22
+THREAD_RUNNING	kernel/thread.h	/^    THREAD_RUNNING,$/;"	e	enum:__anon22
+THREAD_SLEEPING	kernel/thread.h	/^    THREAD_SLEEPING,$/;"	e	enum:__anon22
+TID_t	kernel/thread.h	/^typedef int TID_t;$/;"	t
+TLB	doc/roadmap/roadmap.tex	/^\\end{function}$/;"	s
+TLB dual entries and ASID in MIPS32 architectures	doc/roadmap/roadmap.tex	/^exception occurs.$/;"	b
+TLB miss exception Load reference	doc/roadmap/roadmap.tex	/^\\end{function}$/;"	b
+TLB miss exception Store reference	doc/roadmap/roadmap.tex	/^\\emph{EXCEPTION\\_TLBL}\\index{EXCEPTION\\_TLBL@\\texttt{EXCEPTION\\_TLBL}}.$/;"	b
+TLB modified exception	doc/roadmap/roadmap.tex	/^\\emph{EXCEPTION\\_TLBS}\\index{EXCEPTION\\_TLBS@\\texttt{EXCEPTION\\_TLBS}}.$/;"	b
+TTY_BUF_SIZE	drivers/tty.h	82;"	d
+TTY_COMMAND_RIRQ	drivers/tty.h	77;"	d
+TTY_COMMAND_WIRQ	drivers/tty.h	78;"	d
+TTY_COMMAND_WIRQD	drivers/tty.h	80;"	d
+TTY_COMMAND_WIRQE	drivers/tty.h	79;"	d
+TTY_H	drivers/tty.h	38;"	d
+TTY_STATUS_EBUSY	drivers/tty.h	70;"	d
+TTY_STATUS_ERROR	drivers/tty.h	73;"	d
+TTY_STATUS_ICOMM	drivers/tty.h	67;"	d
+TTY_STATUS_RAVAIL	drivers/tty.h	52;"	d
+TTY_STATUS_RIRQ	drivers/tty.h	58;"	d
+TTY_STATUS_WBUSY	drivers/tty.h	55;"	d
+TTY_STATUS_WIRQ	drivers/tty.h	61;"	d
+TTY_STATUS_WIRQE	drivers/tty.h	64;"	d
+TYPES_H	lib/types.h	38;"	d
+TYPES_H	util/tfstool.c	46;"	d	file:
+Thread Contexts	doc/roadmap/roadmap.tex	/^convention.$/;"	b
+Threading and Scheduling	doc/roadmap/roadmap.tex	/^\\end{exercises}$/;"	c
+Threads	doc/roadmap/roadmap.tex	/^and 132--145.$/;"	s
+Timer driver	doc/roadmap/roadmap.tex	/^\\end{filelist}$/;"	b
+Trivial Filesystem	doc/roadmap/roadmap.tex	/^\\end{function}$/;"	s
+USERLAND_ENABLE_BIT	kernel/thread.h	99;"	d
+USERLAND_STACK_TOP	proc/process.h	44;"	d
+UTILTARGET	Makefile	/^UTILTARGET := util\/tfstool$/;"	m
+UTIL_TFSTOOL_H	util/tfstool.h	38;"	d
+Userland Makefile	doc/roadmap/roadmap.tex	/^\\end{description}$/;"	b
+Using Trivial Filesystem	doc/roadmap/roadmap.tex	/^\\texttt{SOURCES} variable at the beginning of the makefile.$/;"	s
+V0	vm/tlb.h	/^    unsigned int V0:1       __attribute__ ((packed));$/;"	m	struct:__anon34
+V1	vm/tlb.h	/^    unsigned int V1:1       __attribute__ ((packed));$/;"	m	struct:__anon34
+VFS_ERROR	fs/vfs.h	46;"	d
+VFS_INVALID_PARAMS	fs/vfs.h	47;"	d
+VFS_IN_USE	fs/vfs.h	52;"	d
+VFS_LIMIT	fs/vfs.h	51;"	d
+VFS_NAME_LENGTH	fs/vfs.h	56;"	d
+VFS_NOT_FOUND	fs/vfs.h	49;"	d
+VFS_NOT_OPEN	fs/vfs.h	48;"	d
+VFS_NOT_SUPPORTED	fs/vfs.h	45;"	d
+VFS_NO_SUCH_FS	fs/vfs.h	50;"	d
+VFS_OK	fs/vfs.h	44;"	d
+VFS_PATH_LENGTH	fs/vfs.h	60;"	d
+VFS_UNUSABLE	fs/vfs.h	53;"	d
+VPN2	vm/tlb.h	/^    unsigned int VPN2:19    __attribute__ ((packed));$/;"	m	struct:__anon34
+Virtual Filesystem	doc/roadmap/roadmap.tex	/^pathname provided to the access functions.$/;"	s
+Virtual Memory	doc/roadmap/roadmap.tex	/^\\end{exercises}$/;"	c
+Virtual Memory	doc/roadmap/roadmap.tex	/^documented in \\autoref{sec:sync}.$/;"	b
+Wired	lib/registers.h	79;"	d
+YAMS_MAX_DEVICES	drivers/yams.h	49;"	d
+YAMS_TYPECODE_CPUMASK	drivers/yams.h	92;"	d
+YAMS_TYPECODE_CPUSTATUS	drivers/yams.h	91;"	d
+YAMS_TYPECODE_DISK	drivers/yams.h	87;"	d
+YAMS_TYPECODE_MEMINFO	drivers/yams.h	89;"	d
+YAMS_TYPECODE_NIC	drivers/yams.h	88;"	d
+YAMS_TYPECODE_RTC	drivers/yams.h	86;"	d
+YAMS_TYPECODE_SHUTDOWN	drivers/yams.h	90;"	d
+YAMS_TYPECODE_TTY	drivers/yams.h	85;"	d
+_FETCH_CPU_NUM	kernel/asm.h	42;"	d
+__main	tests/crt.S	/^__main:$/;"	l
+_cswitch_context_restore	kernel/cswitch.S	/^_cswitch_context_restore:$/;"	l
+_cswitch_context_save	kernel/cswitch.S	/^_cswitch_context_save:$/;"	l
+_cswitch_in_idle_thread	kernel/cswitch.S	/^_cswitch_in_idle_thread:$/;"	l
+_cswitch_r1	kernel/cswitch.S	/^_cswitch_r1:$/;"	l
+_cswitch_r2	kernel/cswitch.S	/^_cswitch_r2:$/;"	l
+_cswitch_r4	kernel/cswitch.S	/^_cswitch_r4:$/;"	l
+_cswitch_stack_ok	kernel/cswitch.S	/^_cswitch_stack_ok: $/;"	l
+_cswitch_switch	kernel/cswitch.S	/^_cswitch_switch:$/;"	l
+_cswitch_to_userland	kernel/cswitch.S	/^	_cswitch_to_userland:$/;"	l
+_cswitch_vector_code	kernel/cswitch.S	/^_cswitch_vector_code:$/;"	l
+_get_rand	lib/rand.S	/^_get_rand:$/;"	l
+_handle_finished	kernel/cswitch.S	/^_handle_finished:$/;"	l
+_idle_thread_wait_loop	kernel/idle.S	/^_idle_thread_wait_loop:	$/;"	l
+_interrupt_clear_EXL	kernel/_interrupt.S	/^_interrupt_clear_EXL:$/;"	l
+_interrupt_clear_bootstrap	kernel/_interrupt.S	/^_interrupt_clear_bootstrap:	$/;"	l
+_interrupt_clear_sw	kernel/_interrupt.S	/^_interrupt_clear_sw:	$/;"	l
+_interrupt_clear_sw0	kernel/_interrupt.S	/^_interrupt_clear_sw0:	$/;"	l
+_interrupt_clear_sw1	kernel/_interrupt.S	/^_interrupt_clear_sw1:	$/;"	l
+_interrupt_disable	kernel/_interrupt.S	/^_interrupt_disable:$/;"	l
+_interrupt_enable	kernel/_interrupt.S	/^_interrupt_enable:$/;"	l
+_interrupt_generate_sw0	kernel/_interrupt.S	/^_interrupt_generate_sw0:	$/;"	l
+_interrupt_get_state	kernel/_interrupt.S	/^_interrupt_get_state:$/;"	l
+_interrupt_getcpu	kernel/_interrupt.S	/^_interrupt_getcpu:	$/;"	l
+_interrupt_set_EXL	kernel/_interrupt.S	/^_interrupt_set_EXL:$/;"	l
+_interrupt_set_state	kernel/_interrupt.S	/^_interrupt_set_state:$/;"	l
+_intr_handle	kernel/cswitch.S	/^_intr_handle:$/;"	l
+_kernel_panic	kernel/panic.c	/^void _kernel_panic(char *file, int line, char *description)$/;"	f
+_kexc_handle	kernel/cswitch.S	/^_kexc_handle:	$/;"	l
+_not_usermode_exception	kernel/cswitch.S	/^_not_usermode_exception:$/;"	l
+_set_rand_seed	lib/rand.S	/^_set_rand_seed:$/;"	l
+_start	init/_boot.S	/^_start:	$/;"	l
+_start	tests/crt.S	/^_start:$/;"	l
+_syscall	tests/_syscall.S	/^_syscall:$/;"	l
+_timer_set_ticks	drivers/_timer.S	/^_timer_set_ticks:$/;"	l
+_tlb_get_exception_state	vm/_tlb.S	/^_tlb_get_exception_state:$/;"	l
+_tlb_get_maxindex	vm/_tlb.S	/^_tlb_get_maxindex:$/;"	l
+_tlb_probe	vm/_tlb.S	/^_tlb_probe:$/;"	l
+_tlb_read	vm/_tlb.S	/^_tlb_read:$/;"	l
+_tlb_set_asid	vm/_tlb.S	/^_tlb_set_asid:$/;"	l
+_tlb_write	vm/_tlb.S	/^_tlb_write:$/;"	l
+_tlb_write_random	vm/_tlb.S	/^_tlb_write_random:$/;"	l
+_uexc_handle	kernel/cswitch.S	/^_uexc_handle:$/;"	l
+_usermode_exception	kernel/cswitch.S	/^_usermode_exception:$/;"	l
+a0	lib/registers.h	43;"	d
+a1	lib/registers.h	44;"	d
+a2	lib/registers.h	45;"	d
+a3	lib/registers.h	46;"	d
+address	net/network.c	/^    network_address_t address;$/;"	m	struct:__anon28	file:
+asid	vm/tlb.h	/^    uint32_t asid; \/* ASID of the causing process, only 8 lowest bits used *\/$/;"	m	struct:__anon35
+atoi	lib/libc.c	/^int atoi(const char *s)$/;"	f
+badvaddr	vm/tlb.h	/^    uint32_t badvaddr; \/* Address that caused the exception*\/$/;"	m	struct:__anon35
+badvpn2	vm/tlb.h	/^    uint32_t badvpn2;  \/* VPN2 of the above *\/$/;"	m	struct:__anon35
+bitmap_findnset	lib/bitmap.c	/^int bitmap_findnset(bitmap_t *bitmap, int l)$/;"	f
+bitmap_findnset	util/tfstool.c	/^int bitmap_findnset(bitmap_t *bitmap, int l)$/;"	f
+bitmap_get	lib/bitmap.c	/^int bitmap_get(bitmap_t *bitmap, int pos)$/;"	f
+bitmap_get	util/tfstool.c	/^int bitmap_get(bitmap_t *bitmap, int pos)$/;"	f
+bitmap_init	lib/bitmap.c	/^void bitmap_init(bitmap_t *bitmap, int size)$/;"	f
+bitmap_init	util/tfstool.c	/^void bitmap_init(bitmap_t *bitmap, int size)$/;"	f
+bitmap_set	lib/bitmap.c	/^void bitmap_set(bitmap_t *bitmap, int pos, int value)$/;"	f
+bitmap_set	util/tfstool.c	/^void bitmap_set(bitmap_t *bitmap, int pos, int value)$/;"	f
+bitmap_sizeof	lib/bitmap.c	/^int bitmap_sizeof(int num_bits)$/;"	f
+bitmap_sizeof	util/tfstool.c	/^int bitmap_sizeof(int num_bits)$/;"	f
+bitmap_t	lib/bitmap.h	/^typedef uint32_t bitmap_t;$/;"	t
+block	drivers/gbd.h	/^    uint32_t        block;$/;"	m	struct:gbd_request_struct
+block	fs/tfs.h	/^    uint32_t block[TFS_BLOCKS_MAX];			   		      $/;"	m	struct:__anon16
+block_size	drivers/gbd.h	/^    uint32_t (*block_size)(struct gbd_struct *gbd);$/;"	m	struct:gbd_struct
+block_t	util/tfstool.h	/^typedef uint8_t block_t[TFS_BLOCK_SIZE];$/;"	t
+bmemcopy	drivers/bootargs.c	/^static void bmemcopy(void *target, const void *source, int len)$/;"	f	file:
+bootargs_get	drivers/bootargs.c	/^char *bootargs_get(char *key)$/;"	f
+bootargs_init	drivers/bootargs.c	/^void bootargs_init(void)$/;"	f
+bootargs_t	drivers/bootargs.c	/^static struct bootargs_t {$/;"	s	file:
+bootargs_values	drivers/bootargs.c	/^} bootargs_values[CONFIG_BOOTARGS_MAX];$/;"	v	typeref:struct:bootargs_t	file:
+buenos	doc/roadmap/roadmap.tex	/^\\end{enumerate}$/;"	s
+buf	drivers/gbd.h	/^    uint32_t       buf;$/;"	m	struct:gbd_request_struct
+buffer_bat	fs/tfs.c	/^    bitmap_t       *buffer_bat;     \/* buffer for allocation block *\/$/;"	m	struct:__anon15	file:
+buffer_inode	fs/tfs.c	/^    tfs_inode_t    *buffer_inode;   \/* buffer for inode blocks *\/$/;"	m	struct:__anon15	file:
+buffer_md	fs/tfs.c	/^    tfs_direntry_t *buffer_md;      \/* buffer for directory block *\/$/;"	m	struct:__anon15	file:
+bufsize	net/socket.h	/^    uint32_t bufsize;              \/* size of the receive buffer *\/$/;"	m	struct:__anon25
+busy	net/pop.h	/^    int busy;               \/* is this queue entry in use? *\/$/;"	m	struct:__anon30
+close	fs/vfs.h	/^    int (*close)(struct fs_struct *fs, int fileid);$/;"	m	struct:fs_struct
+command	drivers/disk.h	/^    volatile uint32_t command;$/;"	m	struct:__anon6
+command	drivers/metadev.h	/^    uint32_t command;  \/* Command port of the CPU status device *\/$/;"	m	struct:__anon3
+command	drivers/tty.h	/^    uint32_t command;   \/* Command port of the TTY device *\/$/;"	m	struct:__anon1
+context	kernel/thread.h	/^    context_t *context;$/;"	m	struct:__anon23
+context_t	kernel/cswitch.h	/^} context_t;$/;"	t	typeref:struct:__anon18
+copied	net/socket.h	/^    int *copied;                   \/* bytes copied stored here *\/$/;"	m	struct:__anon25
+cpu_io_area_t	drivers/metadev.h	/^} cpu_io_area_t;$/;"	t	typeref:struct:__anon3
+cpu_real_device_t	drivers/metadev.h	/^} cpu_real_device_t;$/;"	t	typeref:struct:__anon4
+cpu_regs	kernel/cswitch.h	/^    uint32_t cpu_regs[29];   \/* The general purpose registers. zero, k0 and $/;"	m	struct:__anon18
+cpustatus_count	drivers/metadev.c	/^int cpustatus_count() {$/;"	f
+cpustatus_generate_irq	drivers/metadev.c	/^void cpustatus_generate_irq(device_t *dev)$/;"	f
+cpustatus_init	drivers/metadev.c	/^device_t *cpustatus_init(io_descriptor_t *desc)$/;"	f
+cpustatus_interrupt_handle	drivers/metadev.c	/^void cpustatus_interrupt_handle(device_t *dev){$/;"	f
+create	fs/vfs.h	/^    int (*create)(struct fs_struct *fs, char *filename, int size);$/;"	m	struct:fs_struct
+creator	kernel/semaphore.h	/^    TID_t creator;$/;"	m	struct:__anon19
+data	drivers/disk.h	/^    volatile uint32_t data;$/;"	m	struct:__anon6
+data	drivers/tty.h	/^    uint32_t data;      \/* Data port of the TTY device *\/$/;"	m	struct:__anon1
+descriptor	drivers/device.h	/^    io_descriptor_t *descriptor;$/;"	m	struct:__anon10
+dest_port	net/pop.h	/^    uint16_t dest_port   __attribute__ ((packed));$/;"	m	struct:__anon29
+destination	net/network.c	/^    network_address_t destination   __attribute__ ((packed));$/;"	m	struct:__anon26	file:
+device	drivers/gbd.h	/^    device_t       *device;$/;"	m	struct:gbd_struct
+device	drivers/gcd.h	/^    device_t *device;$/;"	m	struct:gcd_struct
+device	drivers/gnd.h	/^    device_t *device;$/;"	m	struct:gnd_struct
+device	kernel/interrupt.h	/^    device_t *device;$/;"	m	struct:__anon21
+device_get	drivers/device.c	/^device_t *device_get(uint32_t typecode, uint32_t n)$/;"	f
+device_init	drivers/device.c	/^void device_init(void)$/;"	f
+device_t	drivers/device.h	/^} device_t;$/;"	t	typeref:struct:__anon10
+device_table	drivers/device.c	/^static device_t *device_table[CONFIG_MAX_DEVICES];$/;"	v	file:
+disk	fs/tfs.c	/^    gbd_t          *disk;$/;"	m	struct:__anon15	file:
+disk	util/tfstool.c	/^FILE *disk;$/;"	v
+disk_block_size	drivers/disk.c	/^static uint32_t disk_block_size(gbd_t *gbd)$/;"	f	file:
+disk_init	drivers/disk.c	/^device_t *disk_init(io_descriptor_t *desc) $/;"	f
+disk_interrupt_handle	drivers/disk.c	/^static void disk_interrupt_handle(device_t *device) $/;"	f	file:
+disk_io_area_t	drivers/disk.h	/^} disk_io_area_t;$/;"	t	typeref:struct:__anon6
+disk_next_request	drivers/disk.c	/^static void disk_next_request(gbd_t *gbd)$/;"	f	file:
+disk_read_block	drivers/disk.c	/^static int disk_read_block(gbd_t *gbd, gbd_request_t *request)$/;"	f	file:
+disk_real_device_t	drivers/disk.h	/^} disk_real_device_t;$/;"	t	typeref:struct:__anon7
+disk_submit_request	drivers/disk.c	/^static int disk_submit_request(gbd_t *gbd, gbd_request_t *request) $/;"	f	file:
+disk_total_blocks	drivers/disk.c	/^static uint32_t disk_total_blocks(gbd_t *gbd)$/;"	f	file:
+disk_write_block	drivers/disk.c	/^static int disk_write_block(gbd_t *gbd, gbd_request_t *request)$/;"	f	file:
+disksched_schedule	drivers/disksched.c	/^void disksched_schedule(volatile gbd_request_t **queue,$/;"	f
+dmaaddr	drivers/disk.h	/^    volatile uint32_t dmaaddr;$/;"	m	struct:__anon6
+drivers_available	drivers/drivers.c	/^drivers_available_t drivers_available[] = {$/;"	v
+drivers_available_t	drivers/drivers.h	/^} drivers_available_t;$/;"	t	typeref:struct:__anon9
+dummy1	vm/tlb.h	/^    unsigned int dummy1:5   __attribute__ ((packed));$/;"	m	struct:__anon34
+dummy2	vm/tlb.h	/^    unsigned int dummy2:6   __attribute__ ((packed));$/;"	m	struct:__anon34
+dummy3	vm/tlb.h	/^    unsigned int dummy3:6   __attribute__ ((packed));$/;"	m	struct:__anon34
+dummy_alignment_fill	kernel/thread.h	/^    uint32_t dummy_alignment_fill[9]; $/;"	m	struct:__anon23
+e_ehsize	proc/elf.h	/^    uint16_t e_ehsize                __attribute__ ((packed));$/;"	m	struct:__anon32
+e_entry	proc/elf.h	/^    uint32_t e_entry                 __attribute__ ((packed));$/;"	m	struct:__anon32
+e_flags	proc/elf.h	/^    uint32_t e_flags                 __attribute__ ((packed));$/;"	m	struct:__anon32
+e_ident	proc/elf.h	/^    unsigned char e_ident[EI_NIDENT] __attribute__ ((packed));$/;"	m	struct:__anon32
+e_machine	proc/elf.h	/^    uint16_t e_machine               __attribute__ ((packed));$/;"	m	struct:__anon32
+e_phentsize	proc/elf.h	/^    uint16_t e_phentsize             __attribute__ ((packed));$/;"	m	struct:__anon32
+e_phnum	proc/elf.h	/^    uint16_t e_phnum                 __attribute__ ((packed));$/;"	m	struct:__anon32
+e_phoff	proc/elf.h	/^    uint32_t e_phoff                 __attribute__ ((packed));$/;"	m	struct:__anon32
+e_shentsize	proc/elf.h	/^    uint16_t e_shentsize             __attribute__ ((packed));$/;"	m	struct:__anon32
+e_shnum	proc/elf.h	/^    uint16_t e_shnum                 __attribute__ ((packed));$/;"	m	struct:__anon32
+e_shoff	proc/elf.h	/^    uint32_t e_shoff                 __attribute__ ((packed));$/;"	m	struct:__anon32
+e_shstrndx	proc/elf.h	/^    uint16_t e_shstrndx              __attribute__ ((packed));$/;"	m	struct:__anon32
+e_type	proc/elf.h	/^    uint16_t e_type                  __attribute__ ((packed));$/;"	m	struct:__anon32
+e_version	proc/elf.h	/^    uint32_t e_version               __attribute__ ((packed));$/;"	m	struct:__anon32
+elf_info_t	proc/elf.h	/^} elf_info_t;$/;"	t	typeref:struct:__anon31
+elf_parse_header	proc/elf.c	/^int elf_parse_header(elf_info_t *elf, openfile_t file)$/;"	f
+entries	vm/pagetable.h	/^    tlb_entry_t entries[PAGETABLE_ENTRIES];$/;"	m	struct:pagetable_struct_t
+entry_point	proc/elf.h	/^    uint32_t entry_point; \/* Entry point for the code *\/$/;"	m	struct:__anon31
+fileid	fs/vfs.c	/^    int fileid;$/;"	m	struct:__anon12	file:
+files	fs/vfs.c	/^    openfile_entry_t files[CONFIG_MAX_OPEN_FILES];$/;"	m	struct:__anon14	file:
+filesize	fs/tfs.h	/^    uint32_t filesize;$/;"	m	struct:__anon16
+filesystem	fs/vfs.c	/^    fs_t *filesystem;$/;"	m	struct:__anon11	file:
+filesystem	fs/vfs.c	/^    fs_t *filesystem;$/;"	m	struct:__anon12	file:
+filesystems	fs/filesystems.c	/^static filesystems_t filesystems[] = {$/;"	v	file:
+filesystems	fs/vfs.c	/^    vfs_entry_t filesystems[CONFIG_MAX_FILESYSTEMS];$/;"	m	struct:__anon13	file:
+filesystems_struct_t	fs/filesystems.h	/^typedef struct filesystems_struct_t {$/;"	s
+filesystems_t	fs/filesystems.h	/^} filesystems_t;$/;"	t	typeref:struct:filesystems_struct_t
+filesystems_try_all	fs/filesystems.c	/^fs_t *filesystems_try_all(gbd_t *disk)$/;"	f
+fill_device_t	drivers/metadev.c	/^static device_t *fill_device_t(io_descriptor_t *desc, device_t *dev)$/;"	f	file:
+find_driver	drivers/device.c	/^static drivers_available_t *find_driver(uint32_t typecode)$/;"	f	file:
+fp	lib/registers.h	69;"	d
+frame	net/pop.h	/^    void *frame;            \/* the incoming packet *\/$/;"	m	struct:__anon30
+frame_handler	net/protocols.c	/^    frame_handler_t frame_handler;$/;"	m	struct:__anon24	file:
+frame_handler_t	net/protocols.h	/^typedef int (*frame_handler_t)(network_address_t source, $/;"	t
+frame_size	drivers/gnd.h	/^    uint32_t (*frame_size)(struct gnd_struct *gnd);$/;"	m	struct:gnd_struct
+free_area_start	kernel/kmalloc.c	/^static uint32_t free_area_start;$/;"	v	file:
+from	net/pop.h	/^    network_address_t from; \/* address of the sender *\/$/;"	m	struct:__anon30
+fs_struct	fs/vfs.h	/^typedef struct fs_struct{$/;"	s
+fs_t	fs/vfs.h	/^} fs_t;$/;"	t	typeref:struct:fs_struct
+gbd_operation_t	drivers/gbd.h	/^} gbd_operation_t;$/;"	t	typeref:enum:__anon8
+gbd_request_struct	drivers/gbd.h	/^typedef struct gbd_request_struct {$/;"	s
+gbd_request_t	drivers/gbd.h	/^} gbd_request_t;$/;"	t	typeref:struct:gbd_request_struct
+gbd_struct	drivers/gbd.h	/^typedef struct gbd_struct {$/;"	s
+gbd_t	drivers/gbd.h	/^} gbd_t;$/;"	t	typeref:struct:gbd_struct
+gcd_struct	drivers/gcd.h	/^typedef struct gcd_struct {$/;"	s
+gcd_t	drivers/gcd.h	/^} gcd_t;$/;"	t	typeref:struct:gcd_struct
+generic_device	drivers/device.h	/^    void *generic_device;$/;"	m	struct:__anon10
+getfilesize	util/tfstool.c	/^unsigned long getfilesize(FILE *fp)$/;"	f
+getfree	fs/vfs.h	/^    int (*getfree)(struct fs_struct *fs);$/;"	m	struct:fs_struct
+gnd	net/network.c	/^    gnd_t *gnd;$/;"	m	struct:__anon28	file:
+gnd_struct	drivers/gnd.h	/^typedef struct gnd_struct {$/;"	s
+gnd_t	drivers/gnd.h	/^} gnd_t;$/;"	t	typeref:struct:gnd_struct
+gp	lib/registers.h	67;"	d
+halt_kernel	kernel/halt.c	/^void halt_kernel(void)$/;"	f
+handler	kernel/interrupt.h	/^    void (*handler)(device_t *);$/;"	m	struct:__anon21
+head	kernel/scheduler.c	/^    TID_t head; \/* the first thread in ready to run queue, negative if none *\/$/;"	m	struct:__anon20	file:
+header	net/network.c	/^    network_frame_header_t header   __attribute__ ((packed));$/;"	m	struct:__anon27	file:
+hi	kernel/cswitch.h	/^    uint32_t hi;             \/* The hi register. *\/$/;"	m	struct:__anon18
+hwaddr	drivers/gnd.h	/^    network_address_t (*hwaddr)(struct gnd_struct *gnd);$/;"	m	struct:gnd_struct
+init	fs/filesystems.h	/^    fs_t *(*init)(gbd_t *disk);$/;"	m	struct:filesystems_struct_t
+init	init/main.c	/^void init(void)$/;"	f
+init	net/protocols.c	/^    void (*init)(void);$/;"	m	struct:__anon24	file:
+init_startup_fallback	init/main.c	/^void init_startup_fallback(void) {$/;"	f
+init_startup_thread	init/main.c	/^void init_startup_thread(uint32_t arg)$/;"	f
+init_wait_loop	init/_boot.S	/^init_wait_loop:$/;"	l
+init_wait_more	init/_boot.S	/^init_wait_more:$/;"	l
+initfunc	drivers/drivers.h	/^    device_t *(*initfunc)(io_descriptor_t *descriptor);$/;"	m	struct:__anon9
+inode	fs/tfs.h	/^    uint32_t inode;$/;"	m	struct:__anon17
+int16_t	lib/types.h	/^typedef signed short int16_t;     \/* signed 16-bit integer *\/ $/;"	t
+int32_t	lib/types.h	/^typedef signed int int32_t;       \/* signed 32-bit integer *\/$/;"	t
+int64_t	lib/types.h	/^typedef signed long long int64_t; \/* signed 64-bit integer *\/$/;"	t
+int8_t	lib/types.h	/^typedef signed char int8_t;       \/* signed 8-bit integer *\/$/;"	t
+interaction	doc/roadmap/Makefile	/^	latex -interaction=errorstopmode roadmap.tex$/;"	m
+internal	drivers/gbd.h	/^    void           *internal;$/;"	m	struct:gbd_request_struct
+internal	fs/vfs.h	/^    void *internal;$/;"	m	struct:fs_struct
+interrupt_entry_t	kernel/interrupt.h	/^} interrupt_entry_t;$/;"	t	typeref:struct:__anon21
+interrupt_handle	kernel/interrupt.c	/^void interrupt_handle(uint32_t cause) {$/;"	f
+interrupt_handlers	kernel/interrupt.c	/^static interrupt_entry_t interrupt_handlers[CONFIG_MAX_DEVICES];$/;"	v	file:
+interrupt_init	kernel/interrupt.c	/^void interrupt_init(int num_cpus) {$/;"	f
+interrupt_register	kernel/interrupt.c	/^void interrupt_register(uint32_t irq,$/;"	f
+interrupt_stacks	kernel/interrupt.c	/^uint32_t interrupt_stacks[CONFIG_MAX_CPUS];$/;"	v
+interrupt_status_t	kernel/interrupt.h	/^typedef uint32_t interrupt_status_t;$/;"	t
+io_address	drivers/device.h	/^    uint32_t io_address;$/;"	m	struct:__anon10
+io_area_base	drivers/yams.h	/^    uint32_t io_area_base  __attribute__ ((packed));     $/;"	m	struct:__anon5
+io_area_len	drivers/yams.h	/^    uint32_t io_area_len   __attribute__ ((packed));$/;"	m	struct:__anon5
+io_descriptor_t	drivers/yams.h	/^} io_descriptor_t;$/;"	t	typeref:struct:__anon5
+irq	drivers/yams.h	/^    uint32_t irq           __attribute__ ((packed));$/;"	m	struct:__anon5
+irq	kernel/interrupt.h	/^    uint32_t irq;$/;"	m	struct:__anon21
+k0	lib/registers.h	65;"	d
+k1	lib/registers.h	66;"	d
+kernel_bootstrap_finished	init/main.c	/^int kernel_bootstrap_finished = 0;$/;"	v
+kernel_exception_handle	kernel/exception.c	/^void kernel_exception_handle(int exception)$/;"	f
+key	drivers/bootargs.c	/^    char *key;$/;"	m	struct:bootargs_t	file:
+kmalloc	kernel/kmalloc.c	/^void *kmalloc(int bytes)$/;"	f
+kmalloc_disable	kernel/kmalloc.c	/^void kmalloc_disable()$/;"	f
+kmalloc_get_numpages	kernel/kmalloc.c	/^int kmalloc_get_numpages()$/;"	f
+kmalloc_get_reserved_pages	kernel/kmalloc.c	/^int kmalloc_get_reserved_pages()$/;"	f
+kmalloc_init	kernel/kmalloc.c	/^void kmalloc_init(void)$/;"	f
+kprintf	lib/xprintf.c	/^int kprintf(const char *fmt, ...) {$/;"	f
+kprintf_slock	lib/xprintf.c	/^spinlock_t kprintf_slock = 0;$/;"	v
+kread	lib/libc.c	/^void kread(char *s, $/;"	f
+kvprintf	lib/xprintf.c	/^int kvprintf(const char *fmt, va_list ap) {$/;"	f
+kwrite	lib/libc.c	/^void kwrite(char *s)$/;"	f
+lo	kernel/cswitch.h	/^    uint32_t lo;             \/* The lo register. *\/$/;"	m	struct:__anon18
+lock	fs/tfs.c	/^    semaphore_t    *lock;$/;"	m	struct:__anon15	file:
+main	tests/halt.c	/^int main(void)$/;"	f
+main	util/tfstool.c	/^int main(int argc, char *argv[])$/;"	f
+memcopy	lib/libc.c	/^void memcopy(int buflen, void *target, const void *source)$/;"	f
+meminfo_get_pages	drivers/metadev.c	/^uint32_t meminfo_get_pages()$/;"	f
+meminfo_init	drivers/metadev.c	/^device_t *meminfo_init(io_descriptor_t *desc)$/;"	f
+memory_end	kernel/kmalloc.c	/^static uint32_t memory_end;$/;"	v	file:
+memoryset	lib/libc.c	/^void memoryset(void *target, char value, int size)$/;"	f
+mountpoint	fs/vfs.c	/^    char mountpoint[VFS_NAME_LENGTH];$/;"	m	struct:__anon11	file:
+mtu	net/network.c	/^    int mtu;$/;"	m	struct:__anon28	file:
+name	drivers/drivers.h	/^    const char *name;$/;"	m	struct:__anon9
+name	fs/filesystems.h	/^    const char *name;$/;"	m	struct:filesystems_struct_t
+name	fs/tfs.h	/^    char     name[TFS_FILENAME_MAX];$/;"	m	struct:__anon17
+network_address_t	drivers/gnd.h	/^typedef uint32_t network_address_t;$/;"	t
+network_frame_header_t	net/network.c	/^} network_frame_header_t;$/;"	t	typeref:struct:__anon26	file:
+network_frame_t	net/network.c	/^} network_frame_t;$/;"	t	typeref:struct:__anon27	file:
+network_free_frame	net/network.c	/^void network_free_frame(void *payload_frame)$/;"	f
+network_get_broadcast_address	net/network.c	/^network_address_t network_get_broadcast_address(void)$/;"	f
+network_get_interface	net/network.c	/^static int network_get_interface(network_address_t local_address)$/;"	f	file:
+network_get_loopback_address	net/network.c	/^network_address_t network_get_loopback_address(void)$/;"	f
+network_get_mtu	net/network.c	/^int network_get_mtu(network_address_t local_address)$/;"	f
+network_get_source_address	net/network.c	/^network_address_t network_get_source_address(int interface)$/;"	f
+network_init	net/network.c	/^void network_init(void)$/;"	f
+network_interface_info_t	net/network.c	/^} network_interface_info_t;$/;"	t	typeref:struct:__anon28	file:
+network_interfaces	net/network.c	/^network_interface_info_t network_interfaces[CONFIG_MAX_GNDS];$/;"	v
+network_protocols	net/protocols.c	/^network_protocols_t network_protocols[] = {$/;"	v
+network_protocols_t	net/protocols.c	/^} network_protocols_t;$/;"	t	typeref:struct:__anon24	file:
+network_receive_frame	net/network.c	/^static int network_receive_frame(network_frame_t *frame)$/;"	f	file:
+network_receive_thread	net/network.c	/^static void network_receive_thread(uint32_t interface)$/;"	f	file:
+network_send	net/network.c	/^int network_send(network_address_t source,$/;"	f
+network_send_interface	net/network.c	/^static int network_send_interface(int interface,$/;"	f	file:
+next	drivers/gbd.h	/^    struct gbd_request_struct *next;$/;"	m	struct:gbd_request_struct	typeref:struct:gbd_request_struct::gbd_request_struct
+next	kernel/thread.h	/^    TID_t next; $/;"	m	struct:__anon23
+number_of_devices	drivers/device.c	/^static int number_of_devices = 0;$/;"	v	file:
+open	fs/vfs.h	/^    int (*open)(struct fs_struct *fs, char *filename);$/;"	m	struct:fs_struct
+open_sockets	net/socket.c	/^socket_descriptor_t open_sockets[CONFIG_MAX_OPEN_SOCKETS];$/;"	v
+open_sockets_sem	net/socket.c	/^semaphore_t *open_sockets_sem;$/;"	v
+openfile	util/tfstool.c	/^FILE *openfile(char *filename, const char *mode)$/;"	f
+openfile_entry_t	fs/vfs.c	/^} openfile_entry_t;$/;"	t	typeref:struct:__anon12	file:
+openfile_t	fs/vfs.h	/^typedef int openfile_t;$/;"	t
+openfile_table	fs/vfs.c	/^} openfile_table;$/;"	v	typeref:struct:__anon14	file:
+operation	drivers/gbd.h	/^    gbd_operation_t operation;$/;"	m	struct:gbd_request_struct
+p_align	proc/elf.h	/^    uint32_t p_align  __attribute__ ((packed));$/;"	m	struct:__anon33
+p_filesz	proc/elf.h	/^    uint32_t p_filesz __attribute__ ((packed));$/;"	m	struct:__anon33
+p_flags	proc/elf.h	/^    uint32_t p_flags  __attribute__ ((packed));$/;"	m	struct:__anon33
+p_memsz	proc/elf.h	/^    uint32_t p_memsz  __attribute__ ((packed));$/;"	m	struct:__anon33
+p_offset	proc/elf.h	/^    uint32_t p_offset __attribute__ ((packed));$/;"	m	struct:__anon33
+p_paddr	proc/elf.h	/^    uint32_t p_paddr  __attribute__ ((packed));$/;"	m	struct:__anon33
+p_type	proc/elf.h	/^    uint32_t p_type   __attribute__ ((packed));$/;"	m	struct:__anon33
+p_vaddr	proc/elf.h	/^    uint32_t p_vaddr  __attribute__ ((packed));$/;"	m	struct:__anon33
+pagepool_free_pages	vm/pagepool.c	/^static bitmap_t *pagepool_free_pages;$/;"	v	file:
+pagepool_free_phys_page	vm/pagepool.c	/^void pagepool_free_phys_page(uint32_t phys_addr)$/;"	f
+pagepool_get_phys_page	vm/pagepool.c	/^uint32_t pagepool_get_phys_page(void)$/;"	f
+pagepool_init	vm/pagepool.c	/^void pagepool_init(void)$/;"	f
+pagepool_num_free_pages	vm/pagepool.c	/^static int pagepool_num_free_pages;$/;"	v	file:
+pagepool_num_pages	vm/pagepool.c	/^static int pagepool_num_pages;$/;"	v	file:
+pagepool_slock	vm/pagepool.c	/^static spinlock_t pagepool_slock;$/;"	v	file:
+pagepool_static_end	vm/pagepool.c	/^static int pagepool_static_end;$/;"	v	file:
+pagetable	kernel/thread.h	/^    pagetable_t *pagetable;$/;"	m	struct:__anon23
+pagetable_struct_t	vm/pagetable.h	/^typedef struct pagetable_struct_t{$/;"	s
+pagetable_t	vm/pagetable.h	/^} pagetable_t;$/;"	t	typeref:struct:pagetable_struct_t
+payload	net/network.c	/^    uint8_t payload[PAGE_SIZE-sizeof(network_frame_header_t)] $/;"	m	struct:__anon27	file:
+pc	kernel/cswitch.h	/^    uint32_t pc;             \/* The program counter. Actually loaded from $/;"	m	struct:__anon18
+polltty_getchar	drivers/polltty.c	/^int polltty_getchar() $/;"	f
+polltty_init	drivers/polltty.c	/^void polltty_init() $/;"	f
+polltty_iobase	drivers/polltty.c	/^static volatile tty_io_area_t *polltty_iobase;$/;"	v	file:
+polltty_putchar	drivers/polltty.c	/^void polltty_putchar(char c)$/;"	f
+pop_header_t	net/pop.h	/^} pop_header_t;$/;"	t	typeref:struct:__anon29
+pop_init	net/pop.c	/^void pop_init()$/;"	f
+pop_push_frame	net/pop.c	/^int pop_push_frame(network_address_t fromaddr,$/;"	f
+pop_queue	net/pop.c	/^static pop_queue_t pop_queue[CONFIG_POP_QUEUE_SIZE];$/;"	v	file:
+pop_queue_sem	net/pop.c	/^static semaphore_t *pop_queue_sem;$/;"	v	file:
+pop_queue_t	net/pop.h	/^} pop_queue_t;$/;"	t	typeref:struct:__anon30
+pop_send_buffer	net/pop.c	/^static void *pop_send_buffer;$/;"	v	file:
+pop_send_buffer_sem	net/pop.c	/^static semaphore_t *pop_send_buffer_sem;$/;"	v	file:
+pop_service_thread	net/pop.c	/^static void pop_service_thread(uint32_t dummy)$/;"	f	file:
+pop_service_thread_id	net/pop.c	/^static TID_t pop_service_thread_id;$/;"	v	file:
+pop_service_thread_sem	net/pop.c	/^static semaphore_t *pop_service_thread_sem;$/;"	v	file:
+port	net/socket.h	/^    uint16_t port;             \/* port this socket is bound to *\/$/;"	m	struct:__anon25
+prev_context	kernel/cswitch.h	/^    void    *prev_context;   \/* Previous context in a nested exception chain *\/$/;"	m	struct:__anon18
+print_tlb_debug	kernel/exception.c	/^static void print_tlb_debug(void)$/;"	f	file:
+print_uint	lib/xprintf.c	/^static int print_uint(char *buf,$/;"	f	file:
+print_usage	util/tfstool.c	/^void print_usage(void)$/;"	f
+printc	lib/xprintf.c	/^static void printc(char *buf, char c, int flags) {$/;"	f	file:
+process_id	kernel/thread.h	/^    process_id_t process_id;$/;"	m	struct:__anon23
+process_id_t	proc/process.h	/^typedef int process_id_t;$/;"	t
+process_start	proc/process.c	/^void process_start(const char *executable)$/;"	f
+protocol	net/socket.h	/^    uint8_t protocol;          \/* protocol of this socket *\/$/;"	m	struct:__anon25
+protocol_id	net/network.c	/^    uint32_t protocol_id             __attribute__ ((packed));$/;"	m	struct:__anon26	file:
+protocol_id	net/protocols.c	/^    uint32_t protocol_id;$/;"	m	struct:__anon24	file:
+protocols_get_frame_handler	net/protocols.c	/^frame_handler_t protocols_get_frame_handler(uint32_t protocol_id)$/;"	f
+protocols_init	net/protocols.c	/^void protocols_init(void)$/;"	f
+ra	lib/registers.h	70;"	d
+rand5_a	lib/rand.S	/^rand5_a:       $/;"	l
+rand5_c	lib/rand.S	/^rand5_c:$/;"	l
+rand5_seed	lib/rand.S	/^rand5_seed:$/;"	l
+rbuf	net/socket.h	/^    void *rbuf;                    \/* payload copied here *\/$/;"	m	struct:__anon25
+read	drivers/gcd.h	/^    int  (*read)(struct gcd_struct *gcd, void *buf, int len);$/;"	m	struct:gcd_struct
+read	fs/vfs.h	/^    int (*read)(struct fs_struct *fs, int fileid, void *buffer,$/;"	m	struct:fs_struct
+read_block	drivers/gbd.h	/^    int (*read_block)(struct gbd_struct *gbd, gbd_request_t *request);$/;"	m	struct:gbd_struct
+read_block	util/tfstool.c	/^void read_block(block_t data, int block)$/;"	f
+read_buf	drivers/tty.h	/^    char read_buf[TTY_BUF_SIZE];  \/* read buffer *\/$/;"	m	struct:__anon2
+read_count	drivers/tty.h	/^    int read_count;               \/* number of chars in buffers *\/$/;"	m	struct:__anon2
+read_head	drivers/tty.h	/^    int read_head;                \/* index to the beginning of data *\/$/;"	m	struct:__anon2
+real_device	drivers/device.h	/^    void *real_device;$/;"	m	struct:__anon10
+receive_complete	net/socket.h	/^    semaphore_t *receive_complete; \/* signaled when packet arrived *\/$/;"	m	struct:__anon25
+recv	drivers/gnd.h	/^    int (*recv)(struct gnd_struct *gnd, void *frame);$/;"	m	struct:gnd_struct
+remove	fs/vfs.h	/^    int (*remove)(struct fs_struct *fs, char *filename);$/;"	m	struct:fs_struct
+request_queue	drivers/disk.h	/^    volatile gbd_request_t     *request_queue;    $/;"	m	struct:__anon7
+request_served	drivers/disk.h	/^    volatile gbd_request_t     *request_served;$/;"	m	struct:__anon7
+resv	drivers/yams.h	/^    uint32_t resv[2]       __attribute__ ((packed));$/;"	m	struct:__anon5
+return_value	drivers/gbd.h	/^    int             return_value;$/;"	m	struct:gbd_request_struct
+ro_location	proc/elf.h	/^    uint32_t ro_location; \/* Location of RO segment in the file *\/$/;"	m	struct:__anon31
+ro_pages	proc/elf.h	/^    uint32_t ro_pages;    \/* Pages needed by the RO segment *\/$/;"	m	struct:__anon31
+ro_size	proc/elf.h	/^    uint32_t ro_size;     \/* Size of RO segment in the file *\/$/;"	m	struct:__anon31
+ro_vaddr	proc/elf.h	/^    uint32_t ro_vaddr;    \/* Virtual address of the RO segment *\/$/;"	m	struct:__anon31
+rtc_get_clockspeed	drivers/metadev.c	/^uint32_t rtc_get_clockspeed()$/;"	f
+rtc_get_msec	drivers/metadev.c	/^uint32_t rtc_get_msec()$/;"	f
+rtc_init	drivers/metadev.c	/^device_t *rtc_init(io_descriptor_t *desc)$/;"	f
+rw_location	proc/elf.h	/^    uint32_t rw_location; \/* Location of RW segment in the file *\/$/;"	m	struct:__anon31
+rw_pages	proc/elf.h	/^    uint32_t rw_pages;    \/* Pages needed by the RW segment *\/$/;"	m	struct:__anon31
+rw_size	proc/elf.h	/^    uint32_t rw_size;     \/* Size of RW segment in the file *\/$/;"	m	struct:__anon31
+rw_vaddr	proc/elf.h	/^    uint32_t rw_vaddr;    \/* Virtual address of the RW segment *\/$/;"	m	struct:__anon31
+s0	lib/registers.h	55;"	d
+s1	lib/registers.h	56;"	d
+s2	lib/registers.h	57;"	d
+s3	lib/registers.h	58;"	d
+s4	lib/registers.h	59;"	d
+s5	lib/registers.h	60;"	d
+s6	lib/registers.h	61;"	d
+s7	lib/registers.h	62;"	d
+scan_int	lib/xprintf.c	/^static int scan_int(const char *s, const char **next) {$/;"	f	file:
+scheduler_add_ready	kernel/scheduler.c	/^void scheduler_add_ready(TID_t t)$/;"	f
+scheduler_add_to_ready_list	kernel/scheduler.c	/^void scheduler_add_to_ready_list(TID_t t)$/;"	f
+scheduler_current_thread	kernel/scheduler.c	/^TID_t scheduler_current_thread[CONFIG_MAX_CPUS];$/;"	v
+scheduler_init	kernel/scheduler.c	/^void scheduler_init(void) {$/;"	f
+scheduler_ready_to_run	kernel/scheduler.c	/^} scheduler_ready_to_run = {-1, -1};$/;"	v	typeref:struct:__anon20	file:
+scheduler_remove_first_ready	kernel/scheduler.c	/^static TID_t scheduler_remove_first_ready(void)$/;"	f	file:
+scheduler_schedule	kernel/scheduler.c	/^void scheduler_schedule(void)$/;"	f
+seek_position	fs/vfs.c	/^    int seek_position;$/;"	m	struct:__anon12	file:
+sem	drivers/gbd.h	/^    semaphore_t    *sem;$/;"	m	struct:gbd_request_struct
+sem	fs/vfs.c	/^    semaphore_t *sem;$/;"	m	struct:__anon13	file:
+sem	fs/vfs.c	/^    semaphore_t *sem;$/;"	m	struct:__anon14	file:
+semaphore_P	kernel/semaphore.c	/^void semaphore_P(semaphore_t *sem)$/;"	f
+semaphore_V	kernel/semaphore.c	/^void semaphore_V(semaphore_t *sem)$/;"	f
+semaphore_create	kernel/semaphore.c	/^semaphore_t *semaphore_create(int value)$/;"	f
+semaphore_destroy	kernel/semaphore.c	/^void semaphore_destroy(semaphore_t *sem)$/;"	f
+semaphore_init	kernel/semaphore.c	/^void semaphore_init(void)$/;"	f
+semaphore_t	kernel/semaphore.h	/^} semaphore_t;$/;"	t	typeref:struct:__anon19
+semaphore_table	kernel/semaphore.c	/^static semaphore_t semaphore_table[CONFIG_MAX_SEMAPHORES];$/;"	v	file:
+semaphore_table_slock	kernel/semaphore.c	/^static spinlock_t semaphore_table_slock;$/;"	v	file:
+send	drivers/gnd.h	/^    int (*send)(struct gnd_struct *gnd, void *frame, network_address_t addr);$/;"	m	struct:gnd_struct
+sender	net/socket.h	/^    network_address_t *sender;     \/* sender's address stored here *\/$/;"	m	struct:__anon25
+shutdown	drivers/metadev.c	/^void shutdown(uint32_t magic)$/;"	f
+shutdown_init	drivers/metadev.c	/^device_t *shutdown_init(io_descriptor_t *desc)$/;"	f
+shutdown_init_done	drivers/metadev.c	/^static int shutdown_init_done = 0;$/;"	v	file:
+size	net/pop.h	/^    uint32_t size        __attribute__ ((packed)); \/* payload size *\/$/;"	m	struct:__anon29
+sleepq_add	kernel/sleepq.c	/^void sleepq_add(void *resource)$/;"	f
+sleepq_hashtable	kernel/sleepq.c	/^static TID_t sleepq_hashtable[SLEEPQ_HASHTABLE_SIZE];$/;"	v	file:
+sleepq_init	kernel/sleepq.c	/^void sleepq_init(void)$/;"	f
+sleepq_slock	kernel/sleepq.c	/^static spinlock_t sleepq_slock;$/;"	v	file:
+sleepq_wake	kernel/sleepq.c	/^void sleepq_wake(void *resource)$/;"	f
+sleepq_wake_all	kernel/sleepq.c	/^void sleepq_wake_all(void *resource)$/;"	f
+sleeps_on	kernel/thread.h	/^    uint32_t sleeps_on;$/;"	m	struct:__anon23
+slock	drivers/disk.h	/^    spinlock_t                 slock;$/;"	m	struct:__anon7
+slock	drivers/metadev.h	/^    spinlock_t slock;$/;"	m	struct:__anon4
+slock	drivers/tty.h	/^    spinlock_t *slock;$/;"	m	struct:__anon2
+slock	kernel/semaphore.h	/^    spinlock_t slock;$/;"	m	struct:__anon19
+snprintf	lib/xprintf.c	/^int snprintf(char *str, int size, const  char  *fmt, ...) {$/;"	f
+sock_t	net/socket.h	/^typedef int sock_t; $/;"	t
+socket	net/pop.h	/^    sock_t socket;          \/* socket this frame belongs to *\/$/;"	m	struct:__anon30
+socket_close	net/socket.c	/^void socket_close(sock_t socket)$/;"	f
+socket_descriptor_t	net/socket.h	/^} socket_descriptor_t;$/;"	t	typeref:struct:__anon25
+socket_init	net/socket.c	/^void socket_init()$/;"	f
+socket_open	net/socket.c	/^sock_t socket_open(uint8_t protocol, uint16_t port)$/;"	f
+socket_recvfrom	net/pop.c	/^int socket_recvfrom(sock_t s,$/;"	f
+socket_sendto	net/pop.c	/^int socket_sendto(sock_t s,$/;"	f
+source	net/network.c	/^    network_address_t source        __attribute__ ((packed));$/;"	m	struct:__anon26	file:
+source_port	net/pop.h	/^    uint16_t source_port __attribute__ ((packed));$/;"	m	struct:__anon29
+sp	lib/registers.h	68;"	d
+spinlock_acquire	kernel/_spinlock.S	/^spinlock_acquire:$/;"	l
+spinlock_release	kernel/_spinlock.S	/^spinlock_release:$/;"	l
+spinlock_reset	kernel/_spinlock.S	/^spinlock_reset:  $/;"	l
+spinlock_t	kernel/spinlock.h	/^typedef int spinlock_t;$/;"	t
+sport	net/socket.h	/^    uint16_t *sport;               \/* sender's port stored here *\/$/;"	m	struct:__anon25
+state	kernel/thread.h	/^    thread_state_t state;$/;"	m	struct:__anon23
+status	drivers/disk.h	/^    volatile uint32_t status;$/;"	m	struct:__anon6
+status	drivers/metadev.h	/^    uint32_t status;   \/* Status port of the CPU status device *\/$/;"	m	struct:__anon3
+status	drivers/tty.h	/^    uint32_t status;    \/* Status port of the TTY device. *\/$/;"	m	struct:__anon1
+status	kernel/cswitch.h	/^    uint32_t status;         \/* Status register bits. *\/$/;"	m	struct:__anon18
+stderr	tests/lib.h	45;"	d
+stdin	tests/lib.h	43;"	d
+stdout	tests/lib.h	44;"	d
+stringcmp	lib/libc.c	/^int stringcmp(const char *str1, const char *str2)$/;"	f
+stringcopy	lib/libc.c	/^char *stringcopy(char *target, const char *source, int buflen)$/;"	f
+strlen	lib/libc.c	/^int strlen(const char *str)$/;"	f
+syscall_close	tests/lib.c	/^int syscall_close(int filehandle)$/;"	f
+syscall_create	tests/lib.c	/^int syscall_create(const char *filename, int size)$/;"	f
+syscall_delete	tests/lib.c	/^int syscall_delete(const char *filename)$/;"	f
+syscall_exec	tests/lib.c	/^int syscall_exec(const char *filename)$/;"	f
+syscall_execp	tests/lib.c	/^int syscall_execp(const char *filename, int argc, const char **argv)$/;"	f
+syscall_exit	tests/lib.c	/^void syscall_exit(int retval)$/;"	f
+syscall_fork	tests/lib.c	/^int syscall_fork(void (*func)(int), int arg)$/;"	f
+syscall_halt	tests/lib.c	/^void syscall_halt(void)$/;"	f
+syscall_handle	proc/syscall.c	/^void syscall_handle(context_t *user_context)$/;"	f
+syscall_join	tests/lib.c	/^int syscall_join(int pid)$/;"	f
+syscall_memlimit	tests/lib.c	/^void *syscall_memlimit(void *heap_end)$/;"	f
+syscall_open	tests/lib.c	/^int syscall_open(const char *filename)$/;"	f
+syscall_read	tests/lib.c	/^int syscall_read(int filehandle, void *buffer, int length)$/;"	f
+syscall_seek	tests/lib.c	/^int syscall_seek(int filehandle, int offset)$/;"	f
+syscall_write	tests/lib.c	/^int syscall_write(int filehandle, const void *buffer, int length)$/;"	f
+system_meminfo	drivers/metadev.c	/^static device_t system_rtc, system_meminfo, system_shutdown;$/;"	v	file:
+system_rtc	drivers/metadev.c	/^static device_t system_rtc, system_meminfo, system_shutdown;$/;"	v	file:
+system_shutdown	drivers/metadev.c	/^static device_t system_rtc, system_meminfo, system_shutdown;$/;"	v	file:
+t0	lib/registers.h	47;"	d
+t1	lib/registers.h	48;"	d
+t2	lib/registers.h	49;"	d
+t3	lib/registers.h	50;"	d
+t4	lib/registers.h	51;"	d
+t5	lib/registers.h	52;"	d
+t6	lib/registers.h	53;"	d
+t7	lib/registers.h	54;"	d
+t8	lib/registers.h	63;"	d
+t9	lib/registers.h	64;"	d
+tail	kernel/scheduler.c	/^    TID_t tail; \/* the last thread in ready to run queue, negative if none *\/$/;"	m	struct:__anon20	file:
+texttt #1	doc/roadmap/roadmap.tex	/^\\newcommand{\\parameter}[3]{%$/;"	P
+texttt #1 textbf #2	doc/roadmap/roadmap.tex	/^\\newenvironment{function}[3]{%$/;"	P
+tfs_close	fs/tfs.c	/^int tfs_close(fs_t *fs, int fileid)$/;"	f
+tfs_create	fs/tfs.c	/^int tfs_create(fs_t *fs, char *filename, int size) $/;"	f
+tfs_direntry_t	fs/tfs.h	/^} tfs_direntry_t;$/;"	t	typeref:struct:__anon17
+tfs_getfree	fs/tfs.c	/^int tfs_getfree(fs_t *fs)$/;"	f
+tfs_init	fs/tfs.c	/^fs_t * tfs_init(gbd_t *disk) $/;"	f
+tfs_inode_t	fs/tfs.h	/^} tfs_inode_t;$/;"	t	typeref:struct:__anon16
+tfs_open	fs/tfs.c	/^int tfs_open(fs_t *fs, char *filename)$/;"	f
+tfs_read	fs/tfs.c	/^int tfs_read(fs_t *fs, int fileid, void *buffer, int bufsize, int offset)$/;"	f
+tfs_remove	fs/tfs.c	/^int tfs_remove(fs_t *fs, char *filename) $/;"	f
+tfs_t	fs/tfs.c	/^} tfs_t;$/;"	t	typeref:struct:__anon15	file:
+tfs_unmount	fs/tfs.c	/^int tfs_unmount(fs_t *fs) $/;"	f
+tfs_write	fs/tfs.c	/^int tfs_write(fs_t *fs, int fileid, void *buffer, int datasize, int offset)$/;"	f
+tfstool_createvol	util/tfstool.c	/^void tfstool_createvol(char *diskfilename, int size, char *volumename)$/;"	f
+tfstool_delete	util/tfstool.c	/^void tfstool_delete(char *diskfilename, char *filename)$/;"	f
+tfstool_list	util/tfstool.c	/^void tfstool_list(char *diskfilename) {$/;"	f
+tfstool_numblocks	util/tfstool.c	/^long tfstool_numblocks(FILE *disk)$/;"	f
+tfstool_read	util/tfstool.c	/^void tfstool_read(char *diskfilename, char *source, char *target) {$/;"	f
+tfstool_write	util/tfstool.c	/^void tfstool_write(char *diskfilename, char *source, char *target) {$/;"	f
+thread_create	kernel/thread.c	/^TID_t thread_create(void (*func)(uint32_t), uint32_t arg)$/;"	f
+thread_finish	kernel/thread.c	/^void thread_finish(void)$/;"	f
+thread_get_current_thread	kernel/thread.c	/^TID_t thread_get_current_thread(void)$/;"	f
+thread_get_current_thread_entry	kernel/thread.c	/^thread_table_t *thread_get_current_thread_entry(void)$/;"	f
+thread_goto_userland	kernel/thread.c	/^void thread_goto_userland(context_t *usercontext)$/;"	f
+thread_run	kernel/thread.c	/^void thread_run(TID_t t)$/;"	f
+thread_stack_areas	kernel/thread.c	/^char thread_stack_areas[CONFIG_THREAD_STACKSIZE * CONFIG_MAX_THREADS];$/;"	v
+thread_state_t	kernel/thread.h	/^} thread_state_t;$/;"	t	typeref:enum:__anon22
+thread_switch	kernel/thread.c	/^void thread_switch(void)$/;"	f
+thread_table	kernel/thread.c	/^thread_table_t thread_table[CONFIG_MAX_THREADS];$/;"	v
+thread_table_init	kernel/thread.c	/^void thread_table_init(void)$/;"	f
+thread_table_slock	kernel/thread.c	/^spinlock_t thread_table_slock;$/;"	v
+thread_table_t	kernel/thread.h	/^} thread_table_t;$/;"	t	typeref:struct:__anon23
+thread_yield	kernel/thread.h	92;"	d
+timer_set_ticks	drivers/timer.c	/^void timer_set_ticks(uint32_t ticks)$/;"	f
+timestamp	net/pop.h	/^    uint32_t timestamp;     \/* when this frame was put into the queue *\/$/;"	m	struct:__anon30
+tlb_entry_t	vm/tlb.h	/^} tlb_entry_t;$/;"	t	typeref:struct:__anon34
+tlb_exception_state_t	vm/tlb.h	/^} tlb_exception_state_t;$/;"	t	typeref:struct:__anon35
+tlb_fill	vm/tlb.c	/^void tlb_fill(pagetable_t *pagetable)$/;"	f
+tlb_load_exception	vm/tlb.c	/^void tlb_load_exception(void)$/;"	f
+tlb_modified_exception	vm/tlb.c	/^void tlb_modified_exception(void)$/;"	f
+tlb_read_end	vm/_tlb.S	/^tlb_read_end:	$/;"	l
+tlb_read_one	vm/_tlb.S	/^tlb_read_one:$/;"	l
+tlb_store_exception	vm/tlb.c	/^void tlb_store_exception(void)$/;"	f
+tlb_write_end	vm/_tlb.S	/^tlb_write_end:	$/;"	l
+tlb_write_one	vm/_tlb.S	/^tlb_write_one:$/;"	l
+total_blocks	drivers/gbd.h	/^    uint32_t (*total_blocks)(struct gbd_struct *gbd);$/;"	m	struct:gbd_struct
+totalblocks	fs/tfs.c	/^    uint32_t       totalblocks;$/;"	m	struct:__anon15	file:
+tsector	drivers/disk.h	/^    volatile uint32_t tsector;$/;"	m	struct:__anon6
+tty_init	drivers/tty.c	/^device_t *tty_init(io_descriptor_t *desc) {$/;"	f
+tty_interrupt_handle	drivers/tty.c	/^void tty_interrupt_handle(device_t *device) {$/;"	f
+tty_io_area_t	drivers/tty.h	/^} tty_io_area_t;$/;"	t	typeref:struct:__anon1
+tty_read	drivers/tty.c	/^static int tty_read(gcd_t *gcd, void *buf, int len)$/;"	f	file:
+tty_real_device_t	drivers/tty.h	/^} tty_real_device_t;$/;"	t	typeref:struct:__anon2
+tty_write	drivers/tty.c	/^static int tty_write(gcd_t *gcd, const void *buf, int len)$/;"	f	file:
+type	drivers/device.h	/^    uint32_t type;$/;"	m	struct:__anon10
+type	drivers/yams.h	/^    uint32_t type          __attribute__ ((packed)); $/;"	m	struct:__anon5
+typecode	drivers/drivers.h	/^    uint32_t typecode;$/;"	m	struct:__anon9
+uint16_t	lib/types.h	/^typedef unsigned short uint16_t;     \/* unsigned 16-bit integer *\/$/;"	t
+uint32_t	lib/types.h	/^typedef unsigned int uint32_t;       \/* unsigned 32-bit integer *\/$/;"	t
+uint64_t	lib/types.h	/^typedef unsigned long long uint64_t; \/* unsigned 64-bit integer *\/$/;"	t
+uint8_t	lib/types.h	/^typedef unsigned char uint8_t;       \/* unsigned 8-bit integer *\/$/;"	t
+unmount	fs/vfs.h	/^    int (*unmount)(struct fs_struct *fs); $/;"	m	struct:fs_struct
+user_context	kernel/thread.h	/^    context_t *user_context;$/;"	m	struct:__anon23
+user_exception_handle	proc/exception.c	/^void user_exception_handle(int exception)$/;"	f
+v0	lib/registers.h	41;"	d
+v1	lib/registers.h	42;"	d
+valid_count	vm/pagetable.h	/^    uint32_t valid_count;$/;"	m	struct:pagetable_struct_t
+value	drivers/bootargs.c	/^    char *value;$/;"	m	struct:bootargs_t	file:
+value	kernel/semaphore.h	/^    int value;$/;"	m	struct:__anon19
+vendor_string	drivers/yams.h	/^    char vendor_string[8]  __attribute__ ((packed));$/;"	m	struct:__anon5
+vfs_close	fs/vfs.c	/^int vfs_close(openfile_t file)$/;"	f
+vfs_create	fs/vfs.c	/^int vfs_create(char *pathname, int size)$/;"	f
+vfs_deinit	fs/vfs.c	/^void vfs_deinit(void)$/;"	f
+vfs_end_op	fs/vfs.c	/^static void vfs_end_op()$/;"	f	file:
+vfs_entry_t	fs/vfs.c	/^} vfs_entry_t;$/;"	t	typeref:struct:__anon11	file:
+vfs_get_filesystem	fs/vfs.c	/^static fs_t *vfs_get_filesystem(char *mountpoint)$/;"	f	file:
+vfs_getfree	fs/vfs.c	/^int vfs_getfree(char *filesystem)$/;"	f
+vfs_init	fs/vfs.c	/^void vfs_init(void)$/;"	f
+vfs_mount	fs/vfs.c	/^int vfs_mount(fs_t *fs, char *name)$/;"	f
+vfs_mount_all	fs/vfs.c	/^void vfs_mount_all(void)$/;"	f
+vfs_mount_fs	fs/vfs.c	/^int vfs_mount_fs(gbd_t *disk, char *volumename)$/;"	f
+vfs_op_sem	fs/vfs.c	/^static semaphore_t *vfs_op_sem;$/;"	v	file:
+vfs_open	fs/vfs.c	/^openfile_t vfs_open(char *pathname)$/;"	f
+vfs_ops	fs/vfs.c	/^static int vfs_ops;$/;"	v	file:
+vfs_parse_pathname	fs/vfs.c	/^static int vfs_parse_pathname(char *pathname, $/;"	f	file:
+vfs_read	fs/vfs.c	/^int vfs_read(openfile_t file, void *buffer, int bufsize)$/;"	f
+vfs_remove	fs/vfs.c	/^int vfs_remove(char *pathname)$/;"	f
+vfs_seek	fs/vfs.c	/^int vfs_seek(openfile_t file, int seek_position)$/;"	f
+vfs_start_op	fs/vfs.c	/^static int vfs_start_op()$/;"	f	file:
+vfs_table	fs/vfs.c	/^} vfs_table;$/;"	v	typeref:struct:__anon13	file:
+vfs_unmount	fs/vfs.c	/^int vfs_unmount(char *name)$/;"	f
+vfs_unmount_sem	fs/vfs.c	/^static semaphore_t *vfs_unmount_sem;$/;"	v	file:
+vfs_usable	fs/vfs.c	/^static int vfs_usable = 0;$/;"	v	file:
+vfs_verify_open	fs/vfs.c	/^static openfile_entry_t *vfs_verify_open(openfile_t file)$/;"	f	file:
+vfs_write	fs/vfs.c	/^int vfs_write(openfile_t file, void *buffer, int datasize)$/;"	f
+vm_create_pagetable	vm/vm.c	/^pagetable_t *vm_create_pagetable(uint32_t asid)$/;"	f
+vm_destroy_pagetable	vm/vm.c	/^void vm_destroy_pagetable(pagetable_t *pagetable)$/;"	f
+vm_init	vm/vm.c	/^void vm_init(void)$/;"	f
+vm_map	vm/vm.c	/^void vm_map(pagetable_t *pagetable, $/;"	f
+vm_set_dirty	vm/vm.c	/^void vm_set_dirty(pagetable_t *pagetable, uint32_t vaddr, int dirty)$/;"	f
+vm_unmap	vm/vm.c	/^void vm_unmap(pagetable_t *pagetable, uint32_t vaddr)$/;"	f
+volume_name	fs/vfs.h	/^    char volume_name[16];$/;"	m	struct:fs_struct
+vsnprintf	lib/xprintf.c	/^int vsnprintf(char *str, int size, const char  *fmt, va_list ap) {$/;"	f
+vxnprintf	lib/xprintf.c	/^static int vxnprintf(char *buf,$/;"	f	file:
+write	drivers/gcd.h	/^    int (*write)(struct gcd_struct *gcd, const void *buf, int len);$/;"	m	struct:gcd_struct
+write	fs/vfs.h	/^    int (*write)(struct fs_struct *fs, int fileid, void *buffer,$/;"	m	struct:fs_struct
+write_block	drivers/gbd.h	/^    int (*write_block)(struct gbd_struct *gbd, gbd_request_t *request);$/;"	m	struct:gbd_struct
+write_block	util/tfstool.c	/^void write_block(block_t data, int block)$/;"	f
+write_buf	drivers/tty.h	/^    char write_buf[TTY_BUF_SIZE]; \/* write buffer *\/$/;"	m	struct:__anon2
+write_count	drivers/tty.h	/^    int write_count;              \/* number of chars in buffers *\/$/;"	m	struct:__anon2
+write_head	drivers/tty.h	/^    int write_head;               \/* index to the beginning of data *\/$/;"	m	struct:__anon2
+zero	lib/registers.h	39;"	d
