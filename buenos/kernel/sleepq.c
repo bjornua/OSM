@@ -183,7 +183,7 @@ void sleepq_wake(void *resource)
 
 	thread_table[first].sleeps_on = 0;
 	thread_table[first].next = -1;
-
+	
 	if (thread_table[first].state == THREAD_SLEEPING) {
 	    thread_table[first].state = THREAD_READY;
 	    scheduler_add_to_ready_list(first);

@@ -84,22 +84,22 @@ void thread_table_init(void)
     for (i=0; i<CONFIG_MAX_THREADS; i++) {
 	/* Set context pointers to the top of the stack*/
 	thread_table[i].context      = (context_t *) (thread_stack_areas
-	    +CONFIG_THREAD_STACKSIZE*i + CONFIG_THREAD_STACKSIZE -
+	    +CONFIG_THREAD_STACKSIZE*i + CONFIG_THREAD_STACKSIZE - 
 						      sizeof(context_t));
 	thread_table[i].user_context = NULL;
 	thread_table[i].state        = THREAD_FREE;
 	thread_table[i].sleeps_on    = 0;
 	thread_table[i].pagetable    = NULL;
-	thread_table[i].process_id   = -1;
-	thread_table[i].next         = -1;
+	thread_table[i].process_id   = -1;	
+	thread_table[i].next         = -1;	
     }
 
     thread_table[IDLE_THREAD_TID].context->cpu_regs[MIPS_REGISTER_SP] =
 	(uint32_t) thread_stack_areas + CONFIG_THREAD_STACKSIZE -4 -
 	sizeof(context_t);
-    thread_table[IDLE_THREAD_TID].context->pc =
+    thread_table[IDLE_THREAD_TID].context->pc = 
         (uint32_t) _idle_thread_wait_loop;
-    thread_table[IDLE_THREAD_TID].context->status =
+    thread_table[IDLE_THREAD_TID].context->status = 
         INTERRUPT_MASK_ALL | INTERRUPT_MASK_MASTER;
     thread_table[IDLE_THREAD_TID].state = THREAD_READY;
     thread_table[IDLE_THREAD_TID].context->prev_context =
@@ -125,18 +125,18 @@ TID_t thread_create(void (*func)(uint32_t), uint32_t arg)
 
 
     interrupt_status_t intr_status;
-
+      
     intr_status = _interrupt_disable();
 
     spinlock_acquire(&thread_table_slock);
-
+    
     /* Find the first free thread table entry starting from 'next_tid' */
     for (i=0; i<CONFIG_MAX_THREADS; i++) {
 	TID_t t = (i + next_tid) % CONFIG_MAX_THREADS;
 
 	if(t == IDLE_THREAD_TID)
 	    continue;
-
+	
 	if (thread_table[t].state
 	    == THREAD_FREE) {
 	    tid = t;
@@ -227,14 +227,14 @@ void thread_run(TID_t t)
 void thread_switch(void)
 {
       interrupt_status_t intr_status;
-
+      
       intr_status = _interrupt_enable();
       _interrupt_generate_sw0();
       _interrupt_set_state(intr_status);
 }
 
 /**
- * Return the TID of the calling thread.
+ * Return the TID of the calling thread. 
  * Finds out what is the TID of the thread calling this function.
  *
  * @return Thread ID of the calling thread.
@@ -244,7 +244,7 @@ TID_t thread_get_current_thread(void)
 {
     TID_t t;
     interrupt_status_t intr_status;
-
+      
     intr_status = _interrupt_disable();
 
     t = scheduler_current_thread[_interrupt_getcpu()];
@@ -266,7 +266,7 @@ thread_table_t *thread_get_current_thread_entry(void)
 {
     TID_t t;
     interrupt_status_t intr_status;
-
+      
     intr_status = _interrupt_disable();
 
     t = scheduler_current_thread[_interrupt_getcpu()];
@@ -321,16 +321,6 @@ void thread_finish(void)
 
     /* not possible without a stack? alternative in assembler? */
     KERNEL_PANIC("thread_finish(): thread was not destroyed");
-}
-
-process_id_t get_pid(void){
-    TID_t tid = get_pid();
-    return thread_table[TID_t]->process_id;
-}
-
-void set_pid(process_id_t pid){
-    TID_t tid = get_pid();
-    thread_table[TID_t]->process_id = pid;
 }
 
 /** @} */

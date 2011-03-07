@@ -37,6 +37,7 @@
 #ifndef BUENOS_PROC_SYSCALL
 #define BUENOS_PROC_SYSCALL
 
+
 /* Syscall function numbers. You may add to this list but do not
  * modify the existing ones.
  */
@@ -54,11 +55,20 @@
 #define SYSCALL_CREATE 0x206
 #define SYSCALL_DELETE 0x207
 
+#define SYSCALL_LOCK_CREATE 0x301
+#define SYSCALL_LOCK_ACQUIRE 0x302
+#define SYSCALL_LOCK_RELEASE 0x303
+#define SYSCALL_CONDITION_CREATE 0x304
+#define SYSCALL_CONDITION_WAIT 0x305
+#define SYSCALL_CONDITION_SIGNAL 0x306
+#define SYSCALL_CONDITION_BROADCAST 0x307
+
 /* When userland program reads or writes these already open files it
  * actually accesses the console.
  */
 #define FILEHANDLE_STDIN 0
 #define FILEHANDLE_STDOUT 1
 #define FILEHANDLE_STDERR 2
+
 
 #endif

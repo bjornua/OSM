@@ -37,12 +37,39 @@
 #ifndef BUENOS_USERLAND_LIB_H
 #define BUENOS_USERLAND_LIB_H
 
+/* Some library functions are quite big, and will make programs
+   similarly large.  This can cause trouble, as they have to fit in
+   the TLB (unless you have finished the TLB handling).  Unneeded
+   portions of the library can be disabled here. */
+
+#define PROVIDE_STRING_FUNCTIONS
+#define PROVIDE_BASIC_IO
+#define PROVIDE_FORMATTED_OUTPUT
+#define PROVIDE_HEAP_ALLOCATOR
+#define PROVIDE_MISC
+
+#include <stdarg.h>
+#include <stddef.h>
+
 #include "lib/types.h"
+#include "kernel/lock_cond.h"
+
+#define MIN(arg1,arg2) ((arg1) > (arg2) ? (arg2) : (arg1))
+#define MAX(arg1,arg2) ((arg1) > (arg2) ? (arg1) : (arg2))
+
+typedef uint8_t byte;
+
+/* POSIX-like integer types */
+
+typedef int32_t ssize_t;
+typedef uint32_t size_t;
+typedef int32_t pid_t;
 
 /* Filehandles for input and output */
 #define stdin 0
 #define stdout 1
 #define stderr 2
+
 
 /* Makes the syscall 'syscall_num' with the arguments 'a1', 'a2' and 'a3'. */
 uint32_t _syscall(uint32_t syscall_num, uint32_t a1, uint32_t a2, uint32_t a3);
@@ -51,9 +78,9 @@ uint32_t _syscall(uint32_t syscall_num, uint32_t a1, uint32_t a2, uint32_t a3);
 
 void syscall_halt(void);
 
-int syscall_exec(const char *filename);
-int syscall_execp(const char *filename, int argc, const char **argv);
-int syscall_join(int pid);
+pid_t syscall_exec(const char *filename);
+pid_t syscall_execp(const char *filename, int argc, const char **argv);
+int syscall_join(pid_t pid);
 void syscall_exit(int retval);
 
 int syscall_open(const char *filename);
@@ -67,5 +94,62 @@ int syscall_delete(const char *filename);
 int syscall_fork(void (*func)(int), int arg);
 void *syscall_memlimit(void *heap_end);
 
+/*
+typedef struct {
+  int dummy[2];
+} usr_lock_t;
+*/
+
+typedef lock_t usr_lock_t;
+int syscall_lock_create(usr_lock_t* lock);
+void syscall_lock_acquire(usr_lock_t* lock);
+void syscall_lock_release(usr_lock_t* lock);
+
+/*
+typedef struct {
+} usr_cond_t;
+*/
+
+typedef cond_t usr_cond_t;
+int syscall_condition_create(usr_cond_t* cond);
+void syscall_condition_wait(usr_cond_t* cond, usr_lock_t lock);
+void syscall_condition_signal(usr_cond_t* cond, usr_lock_t lock);
+void syscall_condition_broadcast(usr_cond_t* cond, usr_lock_t lock);
+
+#ifdef PROVIDE_STRING_FUNCTIONS
+size_t strlen(const char *s);
+char *strcpy(char *dest, const char *src);
+char *strncpy(char *dest, const char *src, size_t n);
+char *strcat(char *dest, const char *src);
+char *strncat(char *dest, const char *src, size_t n);
+int strcmp(const char *s1, const char *s2);
+int strncmp(const char *s1, const char *s2, size_t n);
+#endif
+
+#ifdef PROVIDE_BASIC_IO
+int putc(char c);
+int puts(const char* s);
+int getchar(void);
+ssize_t gets(char *s, size_t size);
+ssize_t readline(char *s, size_t size);
+#endif
+
+#ifdef PROVIDE_FORMATTED_OUTPUT
+int printf(const char *, ...);
+int snprintf(char *, int, const char *, ...);
+#endif
+
+#ifdef PROVIDE_HEAP_ALLOCATOR
+#define HEAP_SIZE 256 /* 256 byte heap - puny! */
+void heap_init();
+void *calloc(size_t nmemb, size_t size);
+void *malloc(size_t size);
+void free(void *ptr);
+void *realloc(void *ptr, size_t size);
+#endif
+
+#ifdef PROVIDE_MISC
+int atoi(const char *nptr);
+#endif
 
 #endif /* BUENOS_USERLAND_LIB_H */
