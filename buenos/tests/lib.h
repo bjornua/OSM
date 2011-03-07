@@ -105,12 +105,8 @@ int syscall_lock_create(usr_lock_t* lock);
 void syscall_lock_acquire(usr_lock_t* lock);
 void syscall_lock_release(usr_lock_t* lock);
 
-/*
 typedef struct {
 } usr_cond_t;
-*/
-
-typedef cond_t usr_cond_t;
 int syscall_condition_create(usr_cond_t* cond);
 void syscall_condition_wait(usr_cond_t* cond, usr_lock_t lock);
 void syscall_condition_signal(usr_cond_t* cond, usr_lock_t lock);

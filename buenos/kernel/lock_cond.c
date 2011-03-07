@@ -57,7 +57,9 @@ void lock_release(lock_t *lock){
 }
 
 int condition_reset(cond_t *cond){
-
+    spinlock_reset(&(cond->spinlock));
+    
+    return 1;
 }
 
 /* We add the thread to the sleepqueue, and sleep, when we wake again, we
@@ -85,8 +87,12 @@ void condition_signal(cond_t *cond, lock_t *condition_lock){
     interrupt_status_t intr_status;
     intr_status = _interrupt_disable();
     spinlock_acquire(&(cond->spinlock));
+    
+    lock_acquire(condition_lock);
 
     sleepq_wake(cond);
+
+    lock_release(condition_lock);
 
     spinlock_release(&(cond->spinlock));
 }
@@ -97,7 +103,11 @@ void condition_broadcast(cond_t *cond, lock_t *condition_lock){
     intr_status = _interrupt_disable();
     spinlock_acquire(&(cond->spinlock));
 
+    lock_acquire(condition_lock);
+
     sleepq_wake_all(cond);
+
+    lock_release(condition_lock);
 
     spinlock_release(&(cond->spinlock));
 }

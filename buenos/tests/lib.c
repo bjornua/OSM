@@ -41,6 +41,7 @@
 
 #include "proc/syscall.h"
 #include "tests/lib.h"
+#include "lib/libc.h"
 
 
 /* Halt the system (sync disks and power off). This function will
@@ -210,12 +211,14 @@ void syscall_condition_broadcast(usr_cond_t* cond, usr_lock_t lock);
 #ifdef PROVIDE_STRING_FUNCTIONS
 
 /* Return the length of the string pointed to by s. */
+/*
 size_t strlen(const char *s)
 {
     size_t i;
     for (i=0; s[i]; i++);
     return i;
 }
+*/
 
 /* Copy all of src to after dest and return dest.  Make sure there is
    enough room before calling this function. */

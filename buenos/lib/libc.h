@@ -64,9 +64,11 @@ void _set_rand_seed(uint32_t seed);
 uint32_t _get_rand(uint32_t range);
 
 /* Prototypes for string manipulation functions */
+/*
 int stringcmp(const char *str1, const char *str2);
 char *stringcopy(char *target, const char *source, int buflen);
 int strlen(const char *str);
+*/
 
 /* memory copy */
 void memcopy(int buflen, void *target, const void *source);
